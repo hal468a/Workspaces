@@ -9,18 +9,10 @@ class NavigateActionClient(Node):
 
     def __init__(self):
         super().__init__("action_client_node")
-        # self.declare_parameter("x", 0)
-        # self.declare_parameter("y", 0)
-        # self.declare_parameter("z", 0)
-
         self._action_client = ActionClient(self, Navigate, "navigate")
     
     def send_goal(self, x, y, z):
         goal_msg = Navigate.Goal()
-        # goal_msg.goal_point.x = self.get_parameter("x").get_parameter_value().double_value
-        # goal_msg.goal_point.y = self.get_parameter("y").get_parameter_value().double_value
-        # goal_msg.goal_point.z = self.get_parameter("z").get_parameter_value().double_value
-
         goal_msg.goal_point.x = float(x)
         goal_msg.goal_point.y = float(y)
         goal_msg.goal_point.z = float(z)
