@@ -1,0 +1,111 @@
+[0.000000] (-) TimerEvent: {}
+[0.001141] (ros2_pkg) JobQueued: {'identifier': 'ros2_pkg', 'dependencies': OrderedDict()}
+[0.002400] (ros2_pkg) JobStarted: {'identifier': 'ros2_pkg'}
+[0.070809] (ros2_pkg) JobProgress: {'identifier': 'ros2_pkg', 'progress': 'cmake'}
+[0.074141] (ros2_pkg) JobProgress: {'identifier': 'ros2_pkg', 'progress': 'build'}
+[0.077039] (ros2_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '140.115.54.155 56640 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/Workspaces'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e9fb8049-6efe-4393-80ce-3504583b6e2b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/Workspaces/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/ubuntu/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', '192.168.50.20:0.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d6271cc2c0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '140.115.54.155 56640 140.115.54.147 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy')]), 'shell': False}
+[0.100548] (-) TimerEvent: {}
+[0.202003] (-) TimerEvent: {}
+[0.206753] (ros2_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.302168] (-) TimerEvent: {}
+[0.347065] (ros2_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.347816] (ros2_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.402335] (-) TimerEvent: {}
+[0.503143] (-) TimerEvent: {}
+[0.603971] (-) TimerEvent: {}
+[0.704831] (-) TimerEvent: {}
+[0.805664] (-) TimerEvent: {}
+[0.906531] (-) TimerEvent: {}
+[1.007250] (-) TimerEvent: {}
+[1.107942] (-) TimerEvent: {}
+[1.208713] (-) TimerEvent: {}
+[1.216869] (ros2_pkg) StdoutLine: {'line': b'-- Found rclpy: 1.0.12 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[1.218061] (ros2_pkg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.230925] (ros2_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.245424] (ros2_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.308884] (-) TimerEvent: {}
+[1.409680] (-) TimerEvent: {}
+[1.511103] (-) TimerEvent: {}
+[1.611885] (-) TimerEvent: {}
+[1.712642] (-) TimerEvent: {}
+[1.813478] (-) TimerEvent: {}
+[1.914409] (-) TimerEvent: {}
+[2.015199] (-) TimerEvent: {}
+[2.116011] (-) TimerEvent: {}
+[2.216851] (-) TimerEvent: {}
+[2.317679] (-) TimerEvent: {}
+[2.377980] (ros2_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.417863] (-) TimerEvent: {}
+[2.476383] (ros2_pkg) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[2.518034] (-) TimerEvent: {}
+[2.618869] (-) TimerEvent: {}
+[2.719678] (-) TimerEvent: {}
+[2.820517] (-) TimerEvent: {}
+[2.921317] (-) TimerEvent: {}
+[3.022135] (-) TimerEvent: {}
+[3.123001] (-) TimerEvent: {}
+[3.223851] (-) TimerEvent: {}
+[3.247829] (ros2_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[3.324037] (-) TimerEvent: {}
+[3.424864] (-) TimerEvent: {}
+[3.525701] (-) TimerEvent: {}
+[3.626495] (-) TimerEvent: {}
+[3.727325] (-) TimerEvent: {}
+[3.828060] (-) TimerEvent: {}
+[3.928904] (-) TimerEvent: {}
+[4.029699] (-) TimerEvent: {}
+[4.130646] (-) TimerEvent: {}
+[4.157377] (ros2_pkg) StderrLine: {'line': b'CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):\n'}
+[4.163226] (ros2_pkg) StderrLine: {'line': b'  execute_process(/usr/bin/python3 -m rosidl_adapter --package-name ros2_pkg\n'}
+[4.163683] (ros2_pkg) StderrLine: {'line': b'  --arguments-file\n'}
+[4.164031] (ros2_pkg) StderrLine: {'line': b'  /home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter__arguments__ros2_pkg.json\n'}
+[4.167983] (ros2_pkg) StderrLine: {'line': b'  --output-dir\n'}
+[4.168633] (ros2_pkg) StderrLine: {'line': b'  /home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg\n'}
+[4.169017] (ros2_pkg) StderrLine: {'line': b'  --output-file\n'}
+[4.169366] (ros2_pkg) StderrLine: {'line': b'  /home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg.idls)\n'}
+[4.169704] (ros2_pkg) StderrLine: {'line': b'  returned error code 1:\n'}
+[4.170042] (ros2_pkg) StderrLine: {'line': b'\n'}
+[4.170453] (ros2_pkg) StderrLine: {'line': b"  Error processing 'float32 elpased-time' of 'ros2_pkg/Navigate_Result':\n"}
+[4.170835] (ros2_pkg) StderrLine: {'line': b"  ''elpased-time' is an invalid field name.  It should have the pattern\n"}
+[4.171540] (ros2_pkg) StderrLine: {'line': b"  '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''\n"}
+[4.171994] (ros2_pkg) StderrLine: {'line': b'\n'}
+[4.172416] (ros2_pkg) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[4.172858] (ros2_pkg) StderrLine: {'line': b'\n'}
+[4.173298] (ros2_pkg) StderrLine: {'line': b'    File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main\n'}
+[4.173732] (ros2_pkg) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[4.174265] (ros2_pkg) StderrLine: {'line': b'    File "/usr/lib/python3.8/runpy.py", line 87, in _run_code\n'}
+[4.174932] (ros2_pkg) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[4.175489] (ros2_pkg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[4.176019] (ros2_pkg) StderrLine: {'line': b'      sys.exit(main())\n'}
+[4.176477] (ros2_pkg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[4.176968] (ros2_pkg) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[4.177535] (ros2_pkg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 29, in convert_to_idl\n'}
+[4.178125] (ros2_pkg) StderrLine: {'line': b'      return convert_action_to_idl(\n'}
+[4.178722] (ros2_pkg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/action/__init__.py", line 28, in convert_action_to_idl\n'}
+[4.179278] (ros2_pkg) StderrLine: {'line': b'      action = parse_action_string(package_name, input_file.stem, content)\n'}
+[4.179883] (ros2_pkg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 894, in parse_action_string\n'}
+[4.180500] (ros2_pkg) StderrLine: {'line': b'      result_message = parse_message_string(\n'}
+[4.181012] (ros2_pkg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 515, in parse_message_string\n'}
+[4.181489] (ros2_pkg) StderrLine: {'line': b'      fields.append(Field(\n'}
+[4.181966] (ros2_pkg) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 353, in __init__\n'}
+[4.182569] (ros2_pkg) StderrLine: {'line': b'      raise NameError(\n'}
+[4.183115] (ros2_pkg) StderrLine: {'line': b'\n'}
+[4.183659] (ros2_pkg) StderrLine: {'line': b"  NameError: 'elpased-time' is an invalid field name.  It should have the\n"}
+[4.184312] (ros2_pkg) StderrLine: {'line': b"  pattern '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'\n"}
+[4.184859] (ros2_pkg) StderrLine: {'line': b'\n'}
+[4.185436] (ros2_pkg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.186212] (ros2_pkg) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[4.186906] (ros2_pkg) StderrLine: {'line': b'  CMakeLists.txt:26 (rosidl_generate_interfaces)\n'}
+[4.187787] (ros2_pkg) StderrLine: {'line': b'\n'}
+[4.188490] (ros2_pkg) StderrLine: {'line': b'\n'}
+[4.189329] (ros2_pkg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.190241] (ros2_pkg) StdoutLine: {'line': b'See also "/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/CMakeOutput.log".\n'}
+[4.203817] (ros2_pkg) StderrLine: {'line': b'make: *** [Makefile:988: cmake_check_build_system] Error 1\n'}
+[4.209639] (ros2_pkg) CommandEnded: {'returncode': 2}
+[4.230905] (-) TimerEvent: {}
+[4.331909] (-) TimerEvent: {}
+[4.433282] (-) TimerEvent: {}
+[4.534043] (-) TimerEvent: {}
+[4.634834] (-) TimerEvent: {}
+[4.710840] (ros2_pkg) JobEnded: {'identifier': 'ros2_pkg', 'rc': 2}
+[4.722906] (-) EventReactorShutdown: {}

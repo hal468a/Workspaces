@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:382 (file):
+  file INSTALL cannot find
+  "/home/ubuntu/Workspaces/ros2_ws/src/ros2_pkg/scripts/service_client.pys":
+  No such file or directory.
+
+

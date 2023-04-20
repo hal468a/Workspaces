@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/ros2_ws/src/ros2_pkg",
+    "cmake.configureOnOpen": true
+}

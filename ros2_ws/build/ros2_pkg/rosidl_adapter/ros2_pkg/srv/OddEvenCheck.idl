@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ros2_pkg/srv/OddEvenCheck.srv
+// generated code does not contain a copyright notice
+
+
+module ros2_pkg {
+  module srv {
+    struct OddEvenCheck_Request {
+      int64 number;
+    };
+    struct OddEvenCheck_Response {
+      string decision;
+    };
+  };
+};

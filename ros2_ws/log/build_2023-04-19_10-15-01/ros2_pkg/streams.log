@@ -1,0 +1,58 @@
+[0.079s] Invoking command in '/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg -- -j4 -l4
+[0.205s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.341s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.342s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.210s] -- Found rclpy: 1.0.12 (/opt/ros/foxy/share/rclpy/cmake)
+[1.211s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.224s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.240s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.381s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.483s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[3.252s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[4.156s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[4.157s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name ros2_pkg
+[4.157s]   --arguments-file
+[4.158s]   /home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter__arguments__ros2_pkg.json
+[4.158s]   --output-dir
+[4.158s]   /home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg
+[4.159s]   --output-file
+[4.159s]   /home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg.idls)
+[4.159s]   returned error code 1:
+[4.160s] 
+[4.160s]   Error processing 'float32 elpased-time' of 'ros2_pkg/Navigate_Result':
+[4.160s]   ''elpased-time' is an invalid field name.  It should have the pattern
+[4.161s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[4.161s] 
+[4.161s]   Traceback (most recent call last):
+[4.162s] 
+[4.162s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[4.162s]       return _run_code(code, main_globals, None,
+[4.163s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[4.163s]       exec(code, run_globals)
+[4.163s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[4.164s]       sys.exit(main())
+[4.164s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[4.165s]       abs_idl_file = convert_to_idl(
+[4.165s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 29, in convert_to_idl
+[4.165s]       return convert_action_to_idl(
+[4.166s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/action/__init__.py", line 28, in convert_action_to_idl
+[4.166s]       action = parse_action_string(package_name, input_file.stem, content)
+[4.166s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 894, in parse_action_string
+[4.167s]       result_message = parse_message_string(
+[4.167s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 515, in parse_message_string
+[4.167s]       fields.append(Field(
+[4.167s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 353, in __init__
+[4.168s]       raise NameError(
+[4.168s] 
+[4.169s]   NameError: 'elpased-time' is an invalid field name.  It should have the
+[4.169s]   pattern '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[4.170s] 
+[4.170s] Call Stack (most recent call first):
+[4.171s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[4.171s]   CMakeLists.txt:26 (rosidl_generate_interfaces)
+[4.172s] 
+[4.172s] 
+[4.173s] -- Configuring incomplete, errors occurred!
+[4.174s] See also "/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/CMakeOutput.log".
+[4.193s] make: *** [Makefile:988: cmake_check_build_system] Error 1
+[4.199s] Invoked command in '/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg -- -j4 -l4

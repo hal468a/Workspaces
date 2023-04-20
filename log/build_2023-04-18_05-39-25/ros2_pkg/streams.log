@@ -1,0 +1,241 @@
+[0.067s] Invoking command in '/home/ubuntu/Workspaces/build/ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake /home/ubuntu/Workspaces/ros2_ws/src/ros2_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Workspaces/install/ros2_pkg
+[0.374s] -- The C compiler identification is GNU 9.4.0
+[0.634s] -- The CXX compiler identification is GNU 9.4.0
+[0.661s] -- Check for working C compiler: /usr/bin/cc
+[0.976s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.984s] -- Detecting C compiler ABI info
+[1.320s] -- Detecting C compiler ABI info - done
+[1.365s] -- Detecting C compile features
+[1.367s] -- Detecting C compile features - done
+[1.381s] -- Check for working CXX compiler: /usr/bin/c++
+[1.727s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.732s] -- Detecting CXX compiler ABI info
+[2.097s] -- Detecting CXX compiler ABI info - done
+[2.147s] -- Detecting CXX compile features
+[2.149s] -- Detecting CXX compile features - done
+[2.177s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.354s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.354s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.180s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.485s] -- Found rclpy: 1.0.12 (/opt/ros/foxy/share/rclpy/cmake)
+[3.505s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[3.538s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.614s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.424s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[4.689s] -- Found FastRTPS: /opt/ros/foxy/include  
+[5.454s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.631s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[6.602s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[7.544s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[9.505s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.261s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.414s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[10.437s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[10.586s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[10.587s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[10.587s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[10.588s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[10.717s] -- Found PythonExtra: .so  
+[11.259s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[11.500s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.532s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.538s] -- Added test 'lint_cmake' to check CMake code style
+[11.542s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[11.559s] -- Added test 'xmllint' to check XML markup files
+[11.609s] -- Configuring done
+[11.956s] -- Generating done
+[11.980s] -- Build files have been written to: /home/ubuntu/Workspaces/build/ros2_pkg
+[12.028s] Invoked command in '/home/ubuntu/Workspaces/build/ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake /home/ubuntu/Workspaces/ros2_ws/src/ros2_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Workspaces/install/ros2_pkg
+[12.040s] Invoking command in '/home/ubuntu/Workspaces/build/ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/Workspaces/build/ros2_pkg -- -j4 -l4
+[12.250s] [35m[1mScanning dependencies of target ros2_pkg__cpp[0m
+[12.260s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[12.305s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[13.847s] [  5%] Built target ros2_pkg__cpp
+[13.914s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[13.941s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[13.954s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[14.069s] [35m[1mScanning dependencies of target ros2_pkg__rosidl_generator_c[0m
+[14.226s] [ 15%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_generator_c.dir/rosidl_generator_c/ros2_pkg/srv/detail/odd_even_check__functions.c.o[0m
+[14.619s] [ 17%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_generator_c.dir/rosidl_generator_c/ros2_pkg/srv/detail/turn_camera__functions.c.o[0m
+[14.970s] [ 20%] [32m[1mLinking C shared library libros2_pkg__rosidl_generator_c.so[0m
+[15.216s] [ 20%] Built target ros2_pkg__rosidl_generator_c
+[15.303s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[15.523s] [35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_cpp[0m
+[15.725s] [ 25%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_pkg/srv/odd_even_check__type_support.cpp.o[0m
+[15.945s] [35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_introspection_cpp[0m
+[16.171s] [ 28%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_pkg/srv/detail/odd_even_check__type_support.cpp.o[0m
+[16.258s] [35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_fastrtps_cpp[0m
+[16.484s] [ 30%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_pkg/srv/detail/dds_fastrtps/odd_even_check__type_support.cpp.o[0m
+[18.086s] [35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_introspection_c[0m
+[18.318s] [ 33%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_pkg/srv/detail/odd_even_check__type_support.c.o[0m
+[18.682s] [ 35%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_pkg/srv/detail/turn_camera__type_support.c.o[0m
+[18.726s] [ 38%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_pkg/srv/turn_camera__type_support.cpp.o[0m
+[18.760s] [ 41%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_pkg/srv/detail/turn_camera__type_support.cpp.o[0m
+[19.004s] [ 43%] [32m[1mLinking C shared library libros2_pkg__rosidl_typesupport_introspection_c.so[0m
+[19.453s] [ 43%] Built target ros2_pkg__rosidl_typesupport_introspection_c
+[19.579s] [ 46%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_pkg/srv/detail/dds_fastrtps/turn_camera__type_support.cpp.o[0m
+[20.545s] [ 48%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[21.009s] [ 51%] [32m[1mLinking CXX shared library libros2_pkg__rosidl_typesupport_cpp.so[0m
+[21.336s] [ 53%] [32m[1mLinking CXX shared library libros2_pkg__rosidl_typesupport_introspection_cpp.so[0m
+[21.530s] [ 53%] Built target ros2_pkg__rosidl_typesupport_cpp
+[21.815s] [ 53%] Built target ros2_pkg__rosidl_typesupport_introspection_cpp
+[22.305s] [35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_c[0m
+[22.385s] [ 56%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_pkg/srv/odd_even_check__type_support.cpp.o[0m
+[22.400s] [ 58%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_pkg/srv/turn_camera__type_support.cpp.o[0m
+[22.626s] [ 61%] [32m[1mLinking CXX shared library libros2_pkg__rosidl_typesupport_c.so[0m
+[22.831s] [ 61%] Built target ros2_pkg__rosidl_typesupport_c
+[22.987s] [ 64%] [32m[1mLinking CXX shared library libros2_pkg__rosidl_typesupport_fastrtps_cpp.so[0m
+[23.363s] [ 64%] Built target ros2_pkg__rosidl_typesupport_fastrtps_cpp
+[23.415s] [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[24.923s] [35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_fastrtps_c[0m
+[25.183s] [ 69%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_pkg/srv/detail/odd_even_check__type_support_c.cpp.o[0m
+[25.205s] [ 71%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_pkg/srv/detail/turn_camera__type_support_c.cpp.o[0m
+[27.010s] [ 74%] [32m[1mLinking CXX shared library libros2_pkg__rosidl_typesupport_fastrtps_c.so[0m
+[27.385s] [ 74%] Built target ros2_pkg__rosidl_typesupport_fastrtps_c
+[27.431s] [35m[1mScanning dependencies of target ros2_pkg[0m
+[27.479s] [ 74%] Built target ros2_pkg
+[27.525s] [35m[1mScanning dependencies of target ros2_pkg__py[0m
+[27.580s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[30.090s] [ 76%] Built target ros2_pkg__py
+[30.135s] [35m[1mScanning dependencies of target ros2_pkg__python[0m
+[30.241s] [ 79%] [32mBuilding C object CMakeFiles/ros2_pkg__python.dir/rosidl_generator_py/ros2_pkg/srv/_odd_even_check_s.c.o[0m
+[30.252s] [ 82%] [32mBuilding C object CMakeFiles/ros2_pkg__python.dir/rosidl_generator_py/ros2_pkg/srv/_turn_camera_s.c.o[0m
+[30.720s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/ros2_pkg/libros2_pkg__python.so[0m
+[30.952s] [ 84%] Built target ros2_pkg__python
+[31.000s] [35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_c__pyext[0m
+[31.000s] [35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_introspection_c__pyext[0m
+[31.004s] [35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_fastrtps_c__pyext[0m
+[31.137s] [ 87%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros2_pkg/_ros2_pkg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[31.177s] [ 89%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros2_pkg/_ros2_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[31.199s] [ 92%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros2_pkg/_ros2_pkg_s.ep.rosidl_typesupport_c.c.o[0m
+[31.636s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/ros2_pkg/ros2_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[31.724s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/ros2_pkg/ros2_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[31.735s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/ros2_pkg/ros2_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[31.986s] [100%] Built target ros2_pkg__rosidl_typesupport_introspection_c__pyext
+[32.067s] [100%] Built target ros2_pkg__rosidl_typesupport_c__pyext
+[32.192s] [100%] Built target ros2_pkg__rosidl_typesupport_fastrtps_c__pyext
+[32.237s] Invoked command in '/home/ubuntu/Workspaces/build/ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/Workspaces/build/ros2_pkg -- -j4 -l4
+[32.679s] Invoking command in '/home/ubuntu/Workspaces/build/ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/Workspaces/build/ros2_pkg
+[32.717s] -- Install configuration: ""
+[32.719s] -- Execute custom install script
+[32.721s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ament_index/resource_index/rosidl_interfaces/ros2_pkg
+[32.760s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/msg/rosidl_generator_c__visibility_control.h
+[32.798s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__functions.h
+[32.834s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__struct.h
+[32.869s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__type_support.h
+[32.908s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__functions.h
+[32.945s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__struct.h
+[32.982s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__type_support.h
+[33.017s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/odd_even_check.h
+[33.053s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/turn_camera.h
+[33.090s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/environment/library_path.sh
+[33.129s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/environment/library_path.dsv
+[33.168s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[33.205s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__rosidl_typesupport_fastrtps_c.h
+[33.241s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__rosidl_typesupport_fastrtps_c.h
+[33.279s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_fastrtps_c.so
+[33.318s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[33.355s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__rosidl_typesupport_fastrtps_cpp.hpp
+[33.392s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__rosidl_typesupport_fastrtps_cpp.hpp
+[33.434s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_fastrtps_cpp.so
+[33.474s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[33.512s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__rosidl_typesupport_introspection_c.h
+[33.547s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__rosidl_typesupport_introspection_c.h
+[33.587s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__builder.hpp
+[33.624s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__struct.hpp
+[33.660s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__traits.hpp
+[33.697s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__builder.hpp
+[33.734s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__struct.hpp
+[33.769s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__traits.hpp
+[33.807s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/odd_even_check.hpp
+[33.842s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/turn_camera.hpp
+[33.882s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__rosidl_typesupport_introspection_cpp.hpp
+[33.919s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__rosidl_typesupport_introspection_cpp.hpp
+[33.955s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/environment/pythonpath.sh
+[33.993s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/environment/pythonpath.dsv
+[34.029s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/__init__.py
+[34.068s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/srv/__init__.py
+[34.106s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/srv/_odd_even_check.py
+[34.142s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/srv/_turn_camera.py
+[34.179s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/ros2_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[34.218s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/ros2_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[34.255s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/ros2_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[34.292s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__python.so
+[34.328s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/srv/OddEvenCheck.idl
+[34.364s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/srv/TurnCamera.idl
+[34.401s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/srv/OddEvenCheck.srv
+[34.438s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/srv/OddEvenCheck_Request.msg
+[34.475s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/srv/OddEvenCheck_Response.msg
+[34.511s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/srv/TurnCamera.srv
+[34.547s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/srv/TurnCamera_Request.msg
+[34.583s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/srv/TurnCamera_Response.msg
+[34.622s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts//__init__.py
+[34.658s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts//publisher.py
+[34.694s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts//rpm_pub.py
+[34.730s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts//service_client.py
+[34.766s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts//service_server.py
+[34.802s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts//speed_calc.py
+[34.838s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts//subscriber.py
+[34.875s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts//turn_camera_server.py
+[34.911s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/ros2_pkg/publisher.py
+[34.946s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/ros2_pkg/subscriber.py
+[34.983s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/ros2_pkg/rpm_pub.py
+[35.019s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/ros2_pkg/speed_calc.py
+[35.055s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/ros2_pkg/service_server.py
+[35.091s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/ros2_pkg/service_client.py
+[35.127s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/lib/ros2_pkg/turn_camera_server.py
+[35.164s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg//launch/node.launch.py
+[35.201s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ament_index/resource_index/package_run_dependencies/ros2_pkg
+[35.239s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ament_index/resource_index/parent_prefix_path/ros2_pkg
+[35.275s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/environment/ament_prefix_path.sh
+[35.311s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/environment/ament_prefix_path.dsv
+[35.347s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/environment/path.sh
+[35.385s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/environment/path.dsv
+[35.424s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/local_setup.bash
+[35.460s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/local_setup.sh
+[35.497s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/local_setup.zsh
+[35.532s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/local_setup.dsv
+[35.569s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/package.dsv
+[35.605s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ament_index/resource_index/packages/ros2_pkg
+[35.642s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/rosidl_cmake-extras.cmake
+[35.679s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+[35.715s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+[35.755s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ament_cmake_export_targets-extras.cmake
+[35.808s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+[35.879s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[35.917s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[35.957s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkgConfig.cmake
+[36.000s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkgConfig-version.cmake
+[36.044s] -- Symlinking: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/package.xml
+[36.089s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_generator_c.so
+[36.091s] -- Set runtime path of "/home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_generator_c.so" to ""
+[36.092s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_introspection_c.so
+[36.095s] -- Set runtime path of "/home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_introspection_c.so" to ""
+[36.096s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_c.so
+[36.105s] -- Set runtime path of "/home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_c.so" to ""
+[36.107s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_introspection_cpp.so
+[36.110s] -- Set runtime path of "/home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_introspection_cpp.so" to ""
+[36.111s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_cpp.so
+[36.116s] -- Set runtime path of "/home/ubuntu/Workspaces/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_cpp.so" to ""
+[36.303s] Compiling '/home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/__init__.py'...
+[36.541s] Listing '/home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts/'...
+[36.542s] Compiling '/home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts/__init__.py'...
+[36.543s] Compiling '/home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts/publisher.py'...
+[36.544s] Compiling '/home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts/rpm_pub.py'...
+[36.545s] Compiling '/home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts/service_client.py'...
+[36.546s] Compiling '/home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts/service_server.py'...
+[36.547s] Compiling '/home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts/speed_calc.py'...
+[36.549s] Compiling '/home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts/subscriber.py'...
+[36.550s] Compiling '/home/ubuntu/Workspaces/install/ros2_pkg/lib/python3.8/site-packages/scripts/turn_camera_server.py'...
+[36.565s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_generator_cExport.cmake
+[36.567s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_generator_cExport-noconfig.cmake
+[36.568s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_introspection_cExport.cmake
+[36.570s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[36.571s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_cExport.cmake
+[36.573s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_cExport-noconfig.cmake
+[36.574s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_generator_cppExport.cmake
+[36.577s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_introspection_cppExport.cmake
+[36.578s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[36.580s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_cppExport.cmake
+[36.581s] -- Installing: /home/ubuntu/Workspaces/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_cppExport-noconfig.cmake
+[36.590s] Invoked command in '/home/ubuntu/Workspaces/build/ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/Workspaces/build/ros2_pkg

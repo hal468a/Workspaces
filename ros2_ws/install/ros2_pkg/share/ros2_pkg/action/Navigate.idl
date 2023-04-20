@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from ros2_pkg/action/Navigate.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module ros2_pkg {
+  module action {
+    @verbatim (language="comment", text=
+      " Goal")
+    struct Navigate_Goal {
+      geometry_msgs::msg::Point goal_point;
+    };
+    struct Navigate_Result {
+      @verbatim (language="comment", text=
+        " Result")
+      float elapsed_time;
+    };
+    struct Navigate_Feedback {
+      @verbatim (language="comment", text=
+        " Feeback")
+      float distance_to_point;
+    };
+  };
+};
