@@ -1,0 +1,79 @@
+[0.000000] (-) TimerEvent: {}
+[0.000821] (-) JobUnselected: {'identifier': 'ros2_pkg'}
+[0.001240] (cv_basics) JobQueued: {'identifier': 'cv_basics', 'dependencies': OrderedDict()}
+[0.002999] (cv_basics) JobStarted: {'identifier': 'cv_basics'}
+[0.099205] (-) TimerEvent: {}
+[0.200294] (-) TimerEvent: {}
+[0.301560] (-) TimerEvent: {}
+[0.402287] (-) TimerEvent: {}
+[0.503010] (-) TimerEvent: {}
+[0.603708] (-) TimerEvent: {}
+[0.704476] (-) TimerEvent: {}
+[0.806361] (-) TimerEvent: {}
+[0.907038] (-) TimerEvent: {}
+[1.007770] (-) TimerEvent: {}
+[1.108583] (-) TimerEvent: {}
+[1.209928] (-) TimerEvent: {}
+[1.311323] (-) TimerEvent: {}
+[1.412123] (-) TimerEvent: {}
+[1.513047] (-) TimerEvent: {}
+[1.614164] (-) TimerEvent: {}
+[1.714891] (-) TimerEvent: {}
+[1.815609] (-) TimerEvent: {}
+[1.916291] (-) TimerEvent: {}
+[2.016987] (-) TimerEvent: {}
+[2.117717] (-) TimerEvent: {}
+[2.218501] (-) TimerEvent: {}
+[2.319272] (-) TimerEvent: {}
+[2.420149] (-) TimerEvent: {}
+[2.520950] (-) TimerEvent: {}
+[2.621700] (-) TimerEvent: {}
+[2.722465] (-) TimerEvent: {}
+[2.823424] (-) TimerEvent: {}
+[2.924226] (-) TimerEvent: {}
+[3.012486] (cv_basics) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/cv_basics', 'build', '--build-base', '/home/ubuntu/Workspaces/ros2_ws/build/cv_basics/build', 'install', '--record', '/home/ubuntu/Workspaces/ros2_ws/build/cv_basics/install.log', '--install-scripts', '$base/lib/cv_basics', '--single-version-externally-managed'], 'cwd': '/home/ubuntu/Workspaces/ros2_ws/src/cv_basics', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '125.228.57.203 60297 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/Workspaces/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.75.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-6df09c9d-5f18-4c64-aab6-ebe4263c086c.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/Workspaces/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/home/ubuntu/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': '192.168.50.20:0.0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-95b4e20343.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg:/home/ubuntu/Workspaces/ros2_ws/install/cv_basics:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/Workspaces/ros2_ws/build/cv_basics', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '125.228.57.203 60297 140.115.54.147 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/Workspaces/ros2_ws/build/cv_basics/prefix_override:/home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages:/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages:/home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description'}, 'shell': False}
+[3.025217] (-) TimerEvent: {}
+[3.127364] (-) TimerEvent: {}
+[3.228066] (-) TimerEvent: {}
+[3.328816] (-) TimerEvent: {}
+[3.429505] (-) TimerEvent: {}
+[3.530217] (-) TimerEvent: {}
+[3.631012] (-) TimerEvent: {}
+[3.731722] (-) TimerEvent: {}
+[3.832448] (-) TimerEvent: {}
+[3.933182] (-) TimerEvent: {}
+[4.026070] (cv_basics) StdoutLine: {'line': b'running egg_info\n'}
+[4.028571] (cv_basics) StdoutLine: {'line': b'writing ../../build/cv_basics/cv_basics.egg-info/PKG-INFO\n'}
+[4.029682] (cv_basics) StdoutLine: {'line': b'writing dependency_links to ../../build/cv_basics/cv_basics.egg-info/dependency_links.txt\n'}
+[4.030507] (cv_basics) StdoutLine: {'line': b'writing entry points to ../../build/cv_basics/cv_basics.egg-info/entry_points.txt\n'}
+[4.031216] (cv_basics) StdoutLine: {'line': b'writing requirements to ../../build/cv_basics/cv_basics.egg-info/requires.txt\n'}
+[4.031879] (cv_basics) StdoutLine: {'line': b'writing top-level names to ../../build/cv_basics/cv_basics.egg-info/top_level.txt\n'}
+[4.033303] (-) TimerEvent: {}
+[4.134001] (-) TimerEvent: {}
+[4.182486] (cv_basics) StdoutLine: {'line': b"reading manifest file '../../build/cv_basics/cv_basics.egg-info/SOURCES.txt'\n"}
+[4.186456] (cv_basics) StdoutLine: {'line': b"writing manifest file '../../build/cv_basics/cv_basics.egg-info/SOURCES.txt'\n"}
+[4.187162] (cv_basics) StdoutLine: {'line': b'running build\n'}
+[4.187709] (cv_basics) StdoutLine: {'line': b'running build_py\n'}
+[4.188255] (cv_basics) StdoutLine: {'line': b'copying cv_basics/cam_sub.py -> /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics\n'}
+[4.189216] (cv_basics) StdoutLine: {'line': b'copying cv_basics/cam_pub.py -> /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics\n'}
+[4.190381] (cv_basics) StdoutLine: {'line': b'running install\n'}
+[4.193712] (cv_basics) StdoutLine: {'line': b'running install_lib\n'}
+[4.197830] (cv_basics) StdoutLine: {'line': b'copying /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics/cam_sub.py -> /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics\n'}
+[4.198971] (cv_basics) StdoutLine: {'line': b'copying /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics/cam_pub.py -> /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics\n'}
+[4.201625] (cv_basics) StdoutLine: {'line': b'byte-compiling /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics/cam_sub.py to cam_sub.cpython-38.pyc\n'}
+[4.207836] (cv_basics) StdoutLine: {'line': b'byte-compiling /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics/cam_pub.py to cam_pub.cpython-38.pyc\n'}
+[4.210169] (cv_basics) StdoutLine: {'line': b'running install_data\n'}
+[4.212734] (cv_basics) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.220455] (cv_basics) StdoutLine: {'line': b"removing '/home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.222601] (cv_basics) StdoutLine: {'line': b'Copying ../../build/cv_basics/cv_basics.egg-info to /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info\n'}
+[4.228261] (cv_basics) StdoutLine: {'line': b'running install_scripts\n'}
+[4.234145] (-) TimerEvent: {}
+[4.297464] (cv_basics) StdoutLine: {'line': b'Installing img_publisher script to /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics\n'}
+[4.298351] (cv_basics) StdoutLine: {'line': b'Installing img_subscriber script to /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics\n'}
+[4.299974] (cv_basics) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/Workspaces/ros2_ws/build/cv_basics/install.log'\n"}
+[4.334488] (-) TimerEvent: {}
+[4.435202] (cv_basics) CommandEnded: {'returncode': 0}
+[4.437350] (-) TimerEvent: {}
+[4.538232] (-) TimerEvent: {}
+[4.589586] (cv_basics) JobEnded: {'identifier': 'cv_basics', 'rc': 0}
+[4.594900] (-) EventReactorShutdown: {}

@@ -1,0 +1,325 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclpy: 1.0.12 (/opt/ros/foxy/share/rclpy/cmake)
+-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg
+[35m[1mScanning dependencies of target ros2_pkg__cpp[0m
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  4%] Built target ros2_pkg__cpp
+[  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target ros2_pkg__rosidl_generator_c[0m
+[ 12%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_generator_c.dir/rosidl_generator_c/ros2_pkg/srv/detail/odd_even_check__functions.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_generator_c.dir/rosidl_generator_c/ros2_pkg/srv/detail/turn_camera__functions.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_generator_c.dir/rosidl_generator_c/ros2_pkg/action/detail/navigate__functions.c.o[0m
+[35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_cpp[0m
+[ 19%] [32m[1mLinking C shared library libros2_pkg__rosidl_generator_c.so[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_pkg/srv/odd_even_check__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_introspection_cpp[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_pkg/srv/detail/odd_even_check__type_support.cpp.o[0m
+[ 23%] Built target ros2_pkg__rosidl_generator_c
+[35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_fastrtps_cpp[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_pkg/srv/turn_camera__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_pkg/srv/detail/dds_fastrtps/odd_even_check__type_support.cpp.o[0m
+[ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_pkg/action/navigate__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_pkg/srv/detail/turn_camera__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_pkg/srv/detail/dds_fastrtps/turn_camera__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_pkg/action/detail/navigate__type_support.cpp.o[0m
+[ 40%] [32m[1mLinking CXX shared library libros2_pkg__rosidl_typesupport_cpp.so[0m
+[35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_introspection_c[0m
+[ 42%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_pkg/srv/detail/odd_even_check__type_support.c.o[0m
+[ 42%] Built target ros2_pkg__rosidl_typesupport_cpp
+[ 44%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_pkg/action/detail/dds_fastrtps/navigate__type_support.cpp.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_pkg/srv/detail/turn_camera__type_support.c.o[0m
+[ 48%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_pkg/action/detail/navigate__type_support.c.o[0m
+[ 51%] [32m[1mLinking C shared library libros2_pkg__rosidl_typesupport_introspection_c.so[0m
+[ 53%] [32m[1mLinking CXX shared library libros2_pkg__rosidl_typesupport_introspection_cpp.so[0m
+[ 53%] Built target ros2_pkg__rosidl_typesupport_introspection_c
+[ 55%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 55%] Built target ros2_pkg__rosidl_typesupport_introspection_cpp
+[ 57%] [32m[1mLinking CXX shared library libros2_pkg__rosidl_typesupport_fastrtps_cpp.so[0m
+[35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_c[0m
+[ 57%] Built target ros2_pkg__rosidl_typesupport_fastrtps_cpp
+[ 59%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_pkg/srv/odd_even_check__type_support.cpp.o[0m
+[ 63%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_pkg/srv/turn_camera__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_pkg/action/navigate__type_support.cpp.o[0m
+[ 68%] [32m[1mLinking CXX shared library libros2_pkg__rosidl_typesupport_c.so[0m
+[ 68%] Built target ros2_pkg__rosidl_typesupport_c
+[35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_fastrtps_c[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_pkg/srv/detail/odd_even_check__type_support_c.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_pkg/srv/detail/turn_camera__type_support_c.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_pkg/action/detail/navigate__type_support_c.cpp.o[0m
+[ 76%] [32m[1mLinking CXX shared library libros2_pkg__rosidl_typesupport_fastrtps_c.so[0m
+[ 76%] Built target ros2_pkg__rosidl_typesupport_fastrtps_c
+[35m[1mScanning dependencies of target ros2_pkg[0m
+[ 76%] Built target ros2_pkg
+[35m[1mScanning dependencies of target ros2_pkg__py[0m
+[ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 78%] Built target ros2_pkg__py
+[35m[1mScanning dependencies of target ros2_pkg__python[0m
+[ 80%] [32mBuilding C object CMakeFiles/ros2_pkg__python.dir/rosidl_generator_py/ros2_pkg/srv/_odd_even_check_s.c.o[0m
+[ 82%] [32mBuilding C object CMakeFiles/ros2_pkg__python.dir/rosidl_generator_py/ros2_pkg/srv/_turn_camera_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/ros2_pkg__python.dir/rosidl_generator_py/ros2_pkg/action/_navigate_s.c.o[0m
+[ 87%] [32m[1mLinking C shared library rosidl_generator_py/ros2_pkg/libros2_pkg__python.so[0m
+[ 87%] Built target ros2_pkg__python
+[35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_c__pyext[0m
+[35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mScanning dependencies of target ros2_pkg__rosidl_typesupport_fastrtps_c__pyext[0m
+[ 89%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros2_pkg/_ros2_pkg_s.ep.rosidl_typesupport_c.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros2_pkg/_ros2_pkg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros2_pkg/_ros2_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 95%] [32m[1mLinking C shared library rosidl_generator_py/ros2_pkg/ros2_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/ros2_pkg/ros2_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[100%] [32m[1mLinking CXX shared library rosidl_generator_py/ros2_pkg/ros2_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[100%] Built target ros2_pkg__rosidl_typesupport_c__pyext
+[100%] Built target ros2_pkg__rosidl_typesupport_introspection_c__pyext
+[100%] Built target ros2_pkg__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ament_index/resource_index/rosidl_interfaces/ros2_pkg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/msg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/turn_camera.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__struct.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__struct.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__functions.c
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__functions.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__type_support.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__type_support.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__functions.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__functions.c
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/odd_even_check.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__functions.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__functions.c
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__struct.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__type_support.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/navigate.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/environment/library_path.sh
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/environment/library_path.dsv
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_generator_c.so
+-- Set runtime path of "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/msg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/msg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/dds_fastrtps
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/dds_fastrtps
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/msg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__type_support.c
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__type_support.c
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__type_support.c
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_c.so
+-- Set runtime path of "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/odd_even_check.hpp
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__traits.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__struct.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__builder.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__struct.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__builder.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__traits.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/turn_camera.hpp
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/navigate.hpp
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__builder.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__struct.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__traits.hpp
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/odd_even_check__type_support.cpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/srv/detail/turn_camera__type_support.cpp
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action
+-- Up-to-date: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/include/ros2_pkg/action/detail/navigate__type_support.cpp
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/environment/pythonpath.sh
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/environment/pythonpath.dsv
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/__init__.py
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/__init__.py'...
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/srv
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/srv/__init__.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/srv/_odd_even_check.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/srv/_odd_even_check_s.c
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/srv/_turn_camera.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/srv/_turn_camera_s.c
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/action
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/action/__init__.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/action/_navigate_s.c
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/action/_navigate.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/ros2_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+-- Set runtime path of "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/ros2_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/ros2_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+-- Set runtime path of "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/ros2_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/ros2_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+-- Set runtime path of "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/ros2_pkg/ros2_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__python.so
+-- Set runtime path of "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/libros2_pkg__python.so" to ""
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/srv/OddEvenCheck.idl
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/srv/TurnCamera.idl
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/action/Navigate.idl
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/srv/OddEvenCheck.srv
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/srv/OddEvenCheck_Request.msg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/srv/OddEvenCheck_Response.msg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/srv/TurnCamera.srv
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/srv/TurnCamera_Request.msg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/srv/TurnCamera_Response.msg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/action/Navigate.action
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/__init__.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/rpm_pub.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/service_server.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/action_client.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/turn_camera_server.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/publisher.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/turn_camera_client.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/subscriber.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/service_client.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/speed_calc.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/action_server.py
+Listing '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts'...
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/__init__.py'...
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/action_client.py'...
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/action_server.py'...
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/publisher.py'...
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/rpm_pub.py'...
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/service_client.py'...
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/service_server.py'...
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/speed_calc.py'...
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/subscriber.py'...
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/turn_camera_client.py'...
+Compiling '/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/python3.8/site-packages/scripts/turn_camera_server.py'...
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/ros2_pkg/publisher.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/ros2_pkg/subscriber.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/ros2_pkg/rpm_pub.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/ros2_pkg/speed_calc.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/ros2_pkg/service_server.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/ros2_pkg/service_client.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/ros2_pkg/turn_camera_server.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/ros2_pkg/turn_camera_client.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/ros2_pkg/action_server.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/lib/ros2_pkg/action_client.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg//launch
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg//launch/my_action.launch.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg//launch/node.launch.py
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ament_index/resource_index/package_run_dependencies/ros2_pkg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ament_index/resource_index/parent_prefix_path/ros2_pkg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/environment/path.sh
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/environment/path.dsv
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/local_setup.bash
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/local_setup.sh
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/local_setup.zsh
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/local_setup.dsv
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/package.dsv
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ament_index/resource_index/packages/ros2_pkg
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_generator_cExport.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_cExport.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_generator_cppExport.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkg__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkgConfig.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/cmake/ros2_pkgConfig-version.cmake
+-- Installing: /home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg/share/ros2_pkg/package.xml

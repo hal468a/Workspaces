@@ -1,0 +1,4 @@
+[console_scripts]
+img_publisher = cv_basics.cam_pub:main
+img_subscriber = cv_basics.cam_sub:main
+

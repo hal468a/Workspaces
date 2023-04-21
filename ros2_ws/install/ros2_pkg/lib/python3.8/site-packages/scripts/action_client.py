@@ -1,12 +1,14 @@
 #! /usr/bin/env python3
+import cv2, cv_bridge
+
 import rclpy
 from rclpy.node import Node
 
 from rclpy.action import ActionClient
+
 from ros2_pkg.action import Navigate
 
 class NavigateActionClient(Node):
-
     def __init__(self):
         super().__init__("action_client_node")
         self._action_client = ActionClient(self, Navigate, "navigate")
@@ -42,6 +44,35 @@ class NavigateActionClient(Node):
         print("Result: " + str(result.elapsed_time) + " seconds")
 
         rclpy.shutdown()
+    
+    def open_camera():
+        cap = cv2.VideoCapture(0)
+        if not cap.isOpened():
+            print("Cannot open camera")
+            exit()
+
+        #cv2.namedWindow("live", cv2.WINDOW_AUTOSIZE); # 命名一個視窗，可不寫
+        while(True):
+        # 擷取影像
+            ret, frame = cap.read()
+            if not ret:
+                print("Can't receive frame (stream end?). Exiting ...")
+                break
+
+            # 彩色轉灰階
+            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+            # 顯示圖片
+            cv2.imshow('live', frame)
+            #cv2.imshow('live', gray)
+
+            # 按下 q 鍵離開迴圈
+            if cv2.waitKey(1) == ord('q'):
+                break
+
+        # 釋放該攝影機裝置
+        cap.release()
+        cv2.destroyAllWindows()
 
 def main(args=None):
     rclpy.init()
@@ -54,6 +85,7 @@ def main(args=None):
         z = input("Enter z coordinate: ")
 
         action_client_node.send_goal(x, y, z)
+        action_client_node.open_camera()
         rclpy.spin(action_client_node)
         
     except KeyboardInterrupt:
