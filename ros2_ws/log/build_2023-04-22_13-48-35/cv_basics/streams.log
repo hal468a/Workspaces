@@ -1,0 +1,28 @@
+[5.905s] Invoking command in '/home/ubuntu/Workspaces/ros2_ws/src/cv_basics': PYTHONPATH=/home/ubuntu/Workspaces/ros2_ws/build/cv_basics/prefix_override:/home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/cv_basics build --build-base /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/build install --record /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/install.log --install-scripts $base/lib/cv_basics --single-version-externally-managed
+[7.592s] running egg_info
+[7.595s] writing ../../build/cv_basics/cv_basics.egg-info/PKG-INFO
+[7.596s] writing dependency_links to ../../build/cv_basics/cv_basics.egg-info/dependency_links.txt
+[7.597s] writing entry points to ../../build/cv_basics/cv_basics.egg-info/entry_points.txt
+[7.598s] writing requirements to ../../build/cv_basics/cv_basics.egg-info/requires.txt
+[7.600s] writing top-level names to ../../build/cv_basics/cv_basics.egg-info/top_level.txt
+[7.767s] reading manifest file '../../build/cv_basics/cv_basics.egg-info/SOURCES.txt'
+[7.771s] writing manifest file '../../build/cv_basics/cv_basics.egg-info/SOURCES.txt'
+[7.771s] running build
+[7.772s] running build_py
+[7.772s] copying cv_basics/cam_sub.py -> /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics
+[7.773s] copying cv_basics/cam_pub.py -> /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics
+[7.774s] running install
+[7.778s] running install_lib
+[7.782s] copying /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics/cam_sub.py -> /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics
+[7.783s] copying /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics/cam_pub.py -> /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics
+[7.785s] byte-compiling /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics/cam_sub.py to cam_sub.cpython-38.pyc
+[7.792s] byte-compiling /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics/cam_pub.py to cam_pub.cpython-38.pyc
+[7.794s] running install_data
+[7.796s] running install_egg_info
+[7.803s] removing '/home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info' (and everything under it)
+[7.804s] Copying ../../build/cv_basics/cv_basics.egg-info to /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info
+[7.809s] running install_scripts
+[7.891s] Installing img_publisher script to /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics
+[7.893s] Installing img_subscriber script to /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics
+[7.895s] writing list of installed files to '/home/ubuntu/Workspaces/ros2_ws/build/cv_basics/install.log'
+[8.004s] Invoked command in '/home/ubuntu/Workspaces/ros2_ws/src/cv_basics' returned '0': PYTHONPATH=/home/ubuntu/Workspaces/ros2_ws/build/cv_basics/prefix_override:/home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/cv_basics build --build-base /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/build install --record /home/ubuntu/Workspaces/ros2_ws/build/cv_basics/install.log --install-scripts $base/lib/cv_basics --single-version-externally-managed
