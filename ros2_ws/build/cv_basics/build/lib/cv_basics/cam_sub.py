@@ -4,7 +4,6 @@ from rclpy.node import Node
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 
-
 class ImageSubcriber(Node):
 
     def __init__(self):

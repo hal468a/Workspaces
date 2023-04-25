@@ -27,14 +27,14 @@ while(True):
         break
 
     # 彩色轉灰階
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    # gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     # 顯示圖片
     cv2.imshow('live', frame)
     #cv2.imshow('live', gray)
 
     # 按下 q 鍵離開迴圈
-    if cv2.waitKey(1) == ord('q'):
+    if cv2.waitKey(1) == ord('Q'):
         break
 
 # 釋放該攝影機裝置

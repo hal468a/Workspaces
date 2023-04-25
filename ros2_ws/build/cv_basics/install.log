@@ -13,5 +13,5 @@
 /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info/dependency_links.txt
 /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info/PKG-INFO
 /home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info/entry_points.txt
-/home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics/img_publisher
-/home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics/img_subscriber
+/home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics/cam_pub
+/home/ubuntu/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics/cam_sub
