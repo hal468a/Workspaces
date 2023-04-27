@@ -1,1 +1,0 @@
-/home/ubuntu/Workspaces/ros2_ws/src/ros2_pkg/scripts/subscriber.py

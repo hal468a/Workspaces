@@ -1,1 +1,0 @@
-/home/ubuntu/Workspaces/build/ros2_pkg/rosidl_cmake/srv/TurnCamera_Response.msg

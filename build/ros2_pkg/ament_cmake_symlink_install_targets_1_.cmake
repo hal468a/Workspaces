@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/Workspaces/build/ros2_pkg/libros2_pkg__rosidl_typesupport_fastrtps_cpp.so" "TARGETS" "ros2_pkg__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

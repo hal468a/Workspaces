@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/Workspaces/build/ros2_pkg/rosidl_generator_py/ros2_pkg/ros2_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" "TARGETS" "ros2_pkg__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.8/site-packages/ros2_pkg")

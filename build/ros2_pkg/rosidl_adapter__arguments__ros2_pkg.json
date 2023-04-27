@@ -1,7 +1,0 @@
-{
-  "package_name": "ros2_pkg",
-  "non_idl_tuples": [
-    "/home/ubuntu/Workspaces/ros2_ws/src/ros2_pkg:srv/OddEvenCheck.srv",
-    "/home/ubuntu/Workspaces/ros2_ws/src/ros2_pkg:srv/TurnCamera.srv"
-  ]
-}

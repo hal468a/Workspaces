@@ -1,1 +1,0 @@
-/home/ubuntu/Workspaces/build/ros2_pkg/rosidl_generator_c/ros2_pkg/srv/detail/turn_camera__struct.h

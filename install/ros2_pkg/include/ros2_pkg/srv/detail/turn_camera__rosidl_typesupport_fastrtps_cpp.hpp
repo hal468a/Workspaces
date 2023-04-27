@@ -1,1 +1,0 @@
-/home/ubuntu/Workspaces/build/ros2_pkg/rosidl_typesupport_fastrtps_cpp/ros2_pkg/srv/detail/turn_camera__rosidl_typesupport_fastrtps_cpp.hpp
