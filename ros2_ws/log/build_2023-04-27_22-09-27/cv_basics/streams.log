@@ -1,0 +1,41 @@
+[0.589s] Invoking command in '/home/hal468a/Workspaces/ros2_ws/src/cv_basics': MY_IP=140.115.54.146 PYTHONPATH=/home/hal468a/Workspaces/ros2_ws/build/cv_basics/prefix_override:/home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/cv_basics build --build-base /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build install --record /home/hal468a/Workspaces/ros2_ws/build/cv_basics/install.log --install-scripts $base/lib/cv_basics --single-version-externally-managed
+[0.783s] running egg_info
+[0.783s] creating ../../build/cv_basics/cv_basics.egg-info
+[0.784s] writing ../../build/cv_basics/cv_basics.egg-info/PKG-INFO
+[0.784s] writing dependency_links to ../../build/cv_basics/cv_basics.egg-info/dependency_links.txt
+[0.784s] writing entry points to ../../build/cv_basics/cv_basics.egg-info/entry_points.txt
+[0.784s] writing requirements to ../../build/cv_basics/cv_basics.egg-info/requires.txt
+[0.784s] writing top-level names to ../../build/cv_basics/cv_basics.egg-info/top_level.txt
+[0.786s] writing manifest file '../../build/cv_basics/cv_basics.egg-info/SOURCES.txt'
+[0.814s] reading manifest file '../../build/cv_basics/cv_basics.egg-info/SOURCES.txt'
+[0.815s] writing manifest file '../../build/cv_basics/cv_basics.egg-info/SOURCES.txt'
+[0.815s] running build
+[0.815s] running build_py
+[0.815s] creating /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build
+[0.815s] creating /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build/lib
+[0.815s] creating /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics
+[0.816s] copying cv_basics/cam_sub.py -> /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics
+[0.816s] copying cv_basics/__init__.py -> /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics
+[0.816s] copying cv_basics/cam_pub.py -> /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics
+[0.816s] running install
+[0.816s] running install_lib
+[0.817s] creating /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics
+[0.817s] copying /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics/cam_sub.py -> /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics
+[0.817s] copying /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics/__init__.py -> /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics
+[0.817s] copying /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build/lib/cv_basics/cam_pub.py -> /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics
+[0.818s] byte-compiling /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics/cam_sub.py to cam_sub.cpython-38.pyc
+[0.819s] byte-compiling /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics/__init__.py to __init__.cpython-38.pyc
+[0.819s] byte-compiling /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics/cam_pub.py to cam_pub.cpython-38.pyc
+[0.819s] running install_data
+[0.820s] creating /home/hal468a/Workspaces/ros2_ws/install/cv_basics/share/ament_index
+[0.820s] creating /home/hal468a/Workspaces/ros2_ws/install/cv_basics/share/ament_index/resource_index
+[0.820s] creating /home/hal468a/Workspaces/ros2_ws/install/cv_basics/share/ament_index/resource_index/packages
+[0.820s] copying resource/cv_basics -> /home/hal468a/Workspaces/ros2_ws/install/cv_basics/share/ament_index/resource_index/packages
+[0.820s] copying package.xml -> /home/hal468a/Workspaces/ros2_ws/install/cv_basics/share/cv_basics
+[0.820s] running install_egg_info
+[0.822s] Copying ../../build/cv_basics/cv_basics.egg-info to /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info
+[0.822s] running install_scripts
+[0.837s] Installing cam_pub script to /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics
+[0.837s] Installing cam_sub script to /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics
+[0.837s] writing list of installed files to '/home/hal468a/Workspaces/ros2_ws/build/cv_basics/install.log'
+[0.860s] Invoked command in '/home/hal468a/Workspaces/ros2_ws/src/cv_basics' returned '0': MY_IP=140.115.54.146 PYTHONPATH=/home/hal468a/Workspaces/ros2_ws/build/cv_basics/prefix_override:/home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/cv_basics build --build-base /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build install --record /home/hal468a/Workspaces/ros2_ws/build/cv_basics/install.log --install-scripts $base/lib/cv_basics --single-version-externally-managed

@@ -16,7 +16,6 @@ class RpmPublisher(Node):
         msg = Float32()
         msg.data = float(RPM)
         self.pub.publish(msg)
-
 def main():
     rclpy.init()
     my_pub = RpmPublisher()

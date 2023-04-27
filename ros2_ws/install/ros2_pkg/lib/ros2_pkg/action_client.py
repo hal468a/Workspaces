@@ -45,7 +45,7 @@ class NavigateActionClient(Node):
 
         rclpy.shutdown()
     
-    def open_camera():
+    # def open_camera(self):
         cap = cv2.VideoCapture(0)
         if not cap.isOpened():
             print("Cannot open camera")
@@ -85,7 +85,6 @@ def main(args=None):
         z = input("Enter z coordinate: ")
 
         action_client_node.send_goal(x, y, z)
-        action_client_node.open_camera()
         rclpy.spin(action_client_node)
         
     except KeyboardInterrupt:

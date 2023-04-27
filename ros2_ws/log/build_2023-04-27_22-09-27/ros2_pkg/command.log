@@ -1,0 +1,6 @@
+Invoking command in '/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy MY_IP=140.115.54.146 /usr/bin/cmake /home/hal468a/Workspaces/ros2_ws/src/ros2_pkg -DCMAKE_INSTALL_PREFIX=/home/hal468a/Workspaces/ros2_ws/install/ros2_pkg
+Invoked command in '/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy MY_IP=140.115.54.146 /usr/bin/cmake /home/hal468a/Workspaces/ros2_ws/src/ros2_pkg -DCMAKE_INSTALL_PREFIX=/home/hal468a/Workspaces/ros2_ws/install/ros2_pkg
+Invoking command in '/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy MY_IP=140.115.54.146 /usr/bin/cmake --build /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg -- -j8 -l8
+Invoked command in '/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy MY_IP=140.115.54.146 /usr/bin/cmake --build /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg -- -j8 -l8
+Invoking command in '/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy MY_IP=140.115.54.146 /usr/bin/cmake --install /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg
+Invoked command in '/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy MY_IP=140.115.54.146 /usr/bin/cmake --install /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg

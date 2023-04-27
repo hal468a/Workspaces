@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/ros2_pkg__py
+# Install script for directory: /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/ros2_pkg__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/Workspaces/ros2_ws/install/ros2_pkg")
+  set(CMAKE_INSTALL_PREFIX "/home/hal468a/Workspaces/ros2_ws/install/ros2_pkg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

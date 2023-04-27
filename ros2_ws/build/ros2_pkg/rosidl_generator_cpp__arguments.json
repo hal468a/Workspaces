@@ -1,11 +1,11 @@
 {
   "package_name": "ros2_pkg",
-  "output_dir": "/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_generator_cpp/ros2_pkg",
+  "output_dir": "/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_generator_cpp/ros2_pkg",
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg:srv/OddEvenCheck.idl",
-    "/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg:srv/TurnCamera.idl",
-    "/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg:action/Navigate.idl"
+    "/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg:srv/OddEvenCheck.idl",
+    "/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg:srv/TurnCamera.idl",
+    "/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg:action/Navigate.idl"
   ],
   "ros_interface_dependencies": [
     "sensor_msgs:/opt/ros/foxy/share/sensor_msgs/msg/BatteryState.idl",
@@ -119,9 +119,9 @@
     "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg/srv/OddEvenCheck.idl",
-    "/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg/srv/TurnCamera.idl",
-    "/home/ubuntu/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg/action/Navigate.idl",
+    "/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg/srv/OddEvenCheck.idl",
+    "/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg/srv/TurnCamera.idl",
+    "/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_adapter/ros2_pkg/action/Navigate.idl",
     "/opt/ros/foxy/share/sensor_msgs/msg/BatteryState.idl",
     "/opt/ros/foxy/share/sensor_msgs/msg/CameraInfo.idl",
     "/opt/ros/foxy/share/sensor_msgs/msg/ChannelFloat32.idl",
