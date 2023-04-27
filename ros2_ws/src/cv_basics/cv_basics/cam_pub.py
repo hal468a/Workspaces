@@ -9,7 +9,7 @@ class ImagePublisher(Node):
     def __init__(self):
         super().__init__("image_publisher")
         self.pub_frame = self.create_publisher(Image, 'video_frames', 0)
-        timer_period = 0.1
+        timer_period = 0.2
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.cap = cv2.VideoCapture(0)
