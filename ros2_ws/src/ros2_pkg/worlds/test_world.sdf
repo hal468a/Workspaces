@@ -1,0 +1,54 @@
+<sdf version="1.6">
+	<world name="test_world">
+		<!-- <gravity>0 0 0.5</gravity> -->
+
+		<include>
+			<uri>
+			https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun
+			</uri>
+		</include>
+
+			<!-- <include>
+				<uri>
+				https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground Plane
+				</uri>
+			</include> 
+
+			<model name="ground_plane">
+				<static>true</static>
+				<link name="link_ground">
+					<visual name="visual_ground">
+
+						<geometry>
+							<plane>
+								<normal>0 0 1</normal>
+								<size>25 25</size>
+							</plane>
+						</geometry>
+
+						<material>
+							<ambient>0 0 1 1</ambient>
+							<diffuse>0 0 1 1</diffuse>
+							<specular>0 0 1 1</specular>
+						</material>
+
+					</visual>
+
+					<collision name="collision_ground">
+						<geometry>
+							<plane>
+								<normal>0 0 1</normal>
+								<size>25 25</size>
+							</plane>
+						</geometry>
+					</collision>
+
+				</link>
+			</model> -->
+
+			<include>
+				<uri>ground_planes</uri>
+			</include>
+
+	</world>
+</sdf>
