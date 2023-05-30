@@ -3,18 +3,18 @@
 
 CMakeFiles/ros2_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros2_pkg/_ros2_pkg_s.ep.rosidl_typesupport_c.c.o
  /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_generator_py/ros2_pkg/_ros2_pkg_s.ep.rosidl_typesupport_c.c
- /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
- /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
- /opt/ros/foxy/include/rosidl_runtime_c/action_type_support_struct.h
- /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
- /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
- /opt/ros/foxy/include/rosidl_runtime_c/service_type_support_struct.h
- /opt/ros/foxy/include/rosidl_runtime_c/string.h
- /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
- /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
- /opt/ros/foxy/include/sensor_msgs/msg/detail/image__struct.h
- /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.h
- /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__struct.h
+ /opt/ros/galactic/include/builtin_interfaces/msg/detail/time__struct.h
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/point__struct.h
+ /opt/ros/galactic/include/rosidl_runtime_c/action_type_support_struct.h
+ /opt/ros/galactic/include/rosidl_runtime_c/message_type_support_struct.h
+ /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
+ /opt/ros/galactic/include/rosidl_runtime_c/service_type_support_struct.h
+ /opt/ros/galactic/include/rosidl_runtime_c/string.h
+ /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+ /opt/ros/galactic/include/rosidl_typesupport_interface/macros.h
+ /opt/ros/galactic/include/sensor_msgs/msg/detail/image__struct.h
+ /opt/ros/galactic/include/std_msgs/msg/detail/header__struct.h
+ /opt/ros/galactic/include/unique_identifier_msgs/msg/detail/uuid__struct.h
  /usr/include/python3.8/Python.h
  /usr/include/python3.8/abstract.h
  /usr/include/python3.8/bltinmodule.h

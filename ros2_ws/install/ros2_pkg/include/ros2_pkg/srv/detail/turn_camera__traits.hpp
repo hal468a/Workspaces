@@ -6,12 +6,36 @@
 #define ROS2_PKG__SRV__DETAIL__TURN_CAMERA__TRAITS_HPP_
 
 #include "ros2_pkg/srv/detail/turn_camera__struct.hpp"
-#include <rosidl_runtime_cpp/traits.hpp>
 #include <stdint.h>
+#include <rosidl_runtime_cpp/traits.hpp>
+#include <sstream>
+#include <string>
 #include <type_traits>
 
 namespace rosidl_generator_traits
 {
+
+inline void to_yaml(
+  const ros2_pkg::srv::TurnCamera_Request & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: degree_turn
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "degree_turn: ";
+    value_to_yaml(msg.degree_turn, out);
+    out << "\n";
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ros2_pkg::srv::TurnCamera_Request & msg)
+{
+  std::ostringstream out;
+  to_yaml(msg, out);
+  return out.str();
+}
 
 template<>
 inline const char * data_type<ros2_pkg::srv::TurnCamera_Request>()
@@ -45,6 +69,27 @@ struct is_message<ros2_pkg::srv::TurnCamera_Request>
 
 namespace rosidl_generator_traits
 {
+
+inline void to_yaml(
+  const ros2_pkg::srv::TurnCamera_Response & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: image
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "image:\n";
+    to_yaml(msg.image, out, indentation + 2);
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ros2_pkg::srv::TurnCamera_Response & msg)
+{
+  std::ostringstream out;
+  to_yaml(msg, out);
+  return out.str();
+}
 
 template<>
 inline const char * data_type<ros2_pkg::srv::TurnCamera_Response>()

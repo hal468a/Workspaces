@@ -4,6 +4,7 @@
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/list_install_components.dir
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/rebuild_cache.dir
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/edit_cache.dir
+/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/ament_cmake_python_copy_scripts.dir
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/ros2_pkg__rosidl_typesupport_c__pyext.dir
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_c__pyext.dir
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_c__pyext.dir
@@ -14,6 +15,7 @@
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_c.dir
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/ros2_pkg__rosidl_generator_c.dir
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_cpp.dir
+/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/ament_cmake_python_build_scripts_egg.dir
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/ros2_pkg__cpp.dir
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/ros2_pkg_uninstall.dir
 /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/CMakeFiles/ros2_pkg__rosidl_typesupport_introspection_c.dir

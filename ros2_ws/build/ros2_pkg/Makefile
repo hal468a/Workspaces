@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ament_cmake_python_copy_scripts
+
+# Build rule for target.
+ament_cmake_python_copy_scripts: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ament_cmake_python_copy_scripts
+.PHONY : ament_cmake_python_copy_scripts
+
+# fast build rule for target.
+ament_cmake_python_copy_scripts/fast:
+	$(MAKE) -f CMakeFiles/ament_cmake_python_copy_scripts.dir/build.make CMakeFiles/ament_cmake_python_copy_scripts.dir/build
+.PHONY : ament_cmake_python_copy_scripts/fast
+
+#=============================================================================
 # Target rules for targets named ros2_pkg__rosidl_typesupport_c__pyext
 
 # Build rule for target.
@@ -283,6 +296,19 @@ ros2_pkg__rosidl_typesupport_fastrtps_cpp: cmake_check_build_system
 ros2_pkg__rosidl_typesupport_fastrtps_cpp/fast:
 	$(MAKE) -f CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ros2_pkg__rosidl_typesupport_fastrtps_cpp.dir/build
 .PHONY : ros2_pkg__rosidl_typesupport_fastrtps_cpp/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_build_scripts_egg
+
+# Build rule for target.
+ament_cmake_python_build_scripts_egg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ament_cmake_python_build_scripts_egg
+.PHONY : ament_cmake_python_build_scripts_egg
+
+# fast build rule for target.
+ament_cmake_python_build_scripts_egg/fast:
+	$(MAKE) -f CMakeFiles/ament_cmake_python_build_scripts_egg.dir/build.make CMakeFiles/ament_cmake_python_build_scripts_egg.dir/build
+.PHONY : ament_cmake_python_build_scripts_egg/fast
 
 #=============================================================================
 # Target rules for targets named ros2_pkg__cpp
@@ -1116,6 +1142,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... ament_cmake_python_copy_scripts"
 	@echo "... ros2_pkg__rosidl_typesupport_c__pyext"
 	@echo "... ros2_pkg__rosidl_typesupport_introspection_c__pyext"
 	@echo "... ros2_pkg__rosidl_typesupport_fastrtps_c__pyext"
@@ -1126,6 +1153,7 @@ help:
 	@echo "... ros2_pkg__rosidl_typesupport_fastrtps_c"
 	@echo "... ros2_pkg__rosidl_generator_c"
 	@echo "... ros2_pkg__rosidl_typesupport_fastrtps_cpp"
+	@echo "... ament_cmake_python_build_scripts_egg"
 	@echo "... ros2_pkg__cpp"
 	@echo "... ros2_pkg_uninstall"
 	@echo "... ros2_pkg__rosidl_typesupport_introspection_c"

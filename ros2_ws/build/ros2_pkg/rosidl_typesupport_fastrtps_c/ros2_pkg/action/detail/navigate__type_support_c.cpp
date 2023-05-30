@@ -104,7 +104,7 @@ static bool _Navigate_Goal__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__action__Navigate_Goal(
@@ -272,7 +272,7 @@ static bool _Navigate_Result__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__action__Navigate_Result(
@@ -438,7 +438,7 @@ static bool _Navigate_Feedback__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__action__Navigate_Feedback(
@@ -676,7 +676,7 @@ static bool _Navigate_SendGoal_Request__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__action__Navigate_SendGoal_Request(
@@ -903,7 +903,7 @@ static bool _Navigate_SendGoal_Response__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__action__Navigate_SendGoal_Response(
@@ -1151,7 +1151,7 @@ static bool _Navigate_GetResult_Request__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__action__Navigate_GetResult_Request(
@@ -1359,7 +1359,7 @@ static bool _Navigate_GetResult_Response__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__action__Navigate_GetResult_Response(
@@ -1650,7 +1650,7 @@ static bool _Navigate_FeedbackMessage__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__action__Navigate_FeedbackMessage(

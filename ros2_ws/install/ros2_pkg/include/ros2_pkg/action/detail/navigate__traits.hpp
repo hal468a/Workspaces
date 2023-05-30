@@ -6,8 +6,10 @@
 #define ROS2_PKG__ACTION__DETAIL__NAVIGATE__TRAITS_HPP_
 
 #include "ros2_pkg/action/detail/navigate__struct.hpp"
-#include <rosidl_runtime_cpp/traits.hpp>
 #include <stdint.h>
+#include <rosidl_runtime_cpp/traits.hpp>
+#include <sstream>
+#include <string>
 #include <type_traits>
 
 // Include directives for member types
@@ -16,6 +18,27 @@
 
 namespace rosidl_generator_traits
 {
+
+inline void to_yaml(
+  const ros2_pkg::action::Navigate_Goal & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: goal_point
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "goal_point:\n";
+    to_yaml(msg.goal_point, out, indentation + 2);
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ros2_pkg::action::Navigate_Goal & msg)
+{
+  std::ostringstream out;
+  to_yaml(msg, out);
+  return out.str();
+}
 
 template<>
 inline const char * data_type<ros2_pkg::action::Navigate_Goal>()
@@ -46,6 +69,28 @@ struct is_message<ros2_pkg::action::Navigate_Goal>
 namespace rosidl_generator_traits
 {
 
+inline void to_yaml(
+  const ros2_pkg::action::Navigate_Result & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: elapsed_time
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "elapsed_time: ";
+    value_to_yaml(msg.elapsed_time, out);
+    out << "\n";
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ros2_pkg::action::Navigate_Result & msg)
+{
+  std::ostringstream out;
+  to_yaml(msg, out);
+  return out.str();
+}
+
 template<>
 inline const char * data_type<ros2_pkg::action::Navigate_Result>()
 {
@@ -74,6 +119,28 @@ struct is_message<ros2_pkg::action::Navigate_Result>
 
 namespace rosidl_generator_traits
 {
+
+inline void to_yaml(
+  const ros2_pkg::action::Navigate_Feedback & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: distance_to_point
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "distance_to_point: ";
+    value_to_yaml(msg.distance_to_point, out);
+    out << "\n";
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ros2_pkg::action::Navigate_Feedback & msg)
+{
+  std::ostringstream out;
+  to_yaml(msg, out);
+  return out.str();
+}
 
 template<>
 inline const char * data_type<ros2_pkg::action::Navigate_Feedback>()
@@ -110,6 +177,36 @@ struct is_message<ros2_pkg::action::Navigate_Feedback>
 namespace rosidl_generator_traits
 {
 
+inline void to_yaml(
+  const ros2_pkg::action::Navigate_SendGoal_Request & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: goal_id
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "goal_id:\n";
+    to_yaml(msg.goal_id, out, indentation + 2);
+  }
+
+  // member: goal
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "goal:\n";
+    to_yaml(msg.goal, out, indentation + 2);
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ros2_pkg::action::Navigate_SendGoal_Request & msg)
+{
+  std::ostringstream out;
+  to_yaml(msg, out);
+  return out.str();
+}
+
 template<>
 inline const char * data_type<ros2_pkg::action::Navigate_SendGoal_Request>()
 {
@@ -142,6 +239,37 @@ struct is_message<ros2_pkg::action::Navigate_SendGoal_Request>
 
 namespace rosidl_generator_traits
 {
+
+inline void to_yaml(
+  const ros2_pkg::action::Navigate_SendGoal_Response & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: accepted
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "accepted: ";
+    value_to_yaml(msg.accepted, out);
+    out << "\n";
+  }
+
+  // member: stamp
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "stamp:\n";
+    to_yaml(msg.stamp, out, indentation + 2);
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ros2_pkg::action::Navigate_SendGoal_Response & msg)
+{
+  std::ostringstream out;
+  to_yaml(msg, out);
+  return out.str();
+}
 
 template<>
 inline const char * data_type<ros2_pkg::action::Navigate_SendGoal_Response>()
@@ -232,6 +360,27 @@ struct is_service_response<ros2_pkg::action::Navigate_SendGoal_Response>
 namespace rosidl_generator_traits
 {
 
+inline void to_yaml(
+  const ros2_pkg::action::Navigate_GetResult_Request & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: goal_id
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "goal_id:\n";
+    to_yaml(msg.goal_id, out, indentation + 2);
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ros2_pkg::action::Navigate_GetResult_Request & msg)
+{
+  std::ostringstream out;
+  to_yaml(msg, out);
+  return out.str();
+}
+
 template<>
 inline const char * data_type<ros2_pkg::action::Navigate_GetResult_Request>()
 {
@@ -265,6 +414,37 @@ struct is_message<ros2_pkg::action::Navigate_GetResult_Request>
 
 namespace rosidl_generator_traits
 {
+
+inline void to_yaml(
+  const ros2_pkg::action::Navigate_GetResult_Response & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: status
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "status: ";
+    value_to_yaml(msg.status, out);
+    out << "\n";
+  }
+
+  // member: result
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "result:\n";
+    to_yaml(msg.result, out, indentation + 2);
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ros2_pkg::action::Navigate_GetResult_Response & msg)
+{
+  std::ostringstream out;
+  to_yaml(msg, out);
+  return out.str();
+}
 
 template<>
 inline const char * data_type<ros2_pkg::action::Navigate_GetResult_Response>()
@@ -357,6 +537,36 @@ struct is_service_response<ros2_pkg::action::Navigate_GetResult_Response>
 
 namespace rosidl_generator_traits
 {
+
+inline void to_yaml(
+  const ros2_pkg::action::Navigate_FeedbackMessage & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: goal_id
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "goal_id:\n";
+    to_yaml(msg.goal_id, out, indentation + 2);
+  }
+
+  // member: feedback
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "feedback:\n";
+    to_yaml(msg.feedback, out, indentation + 2);
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ros2_pkg::action::Navigate_FeedbackMessage & msg)
+{
+  std::ostringstream out;
+  to_yaml(msg, out);
+  return out.str();
+}
 
 template<>
 inline const char * data_type<ros2_pkg::action::Navigate_FeedbackMessage>()

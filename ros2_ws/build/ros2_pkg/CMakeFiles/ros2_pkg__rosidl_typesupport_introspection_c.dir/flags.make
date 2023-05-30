@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -std=gnu11
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"ros2_pkg\" -Dros2_pkg__rosidl_typesupport_introspection_c_EXPORTS
 
-C_INCLUDES = -I/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_generator_c -I/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_typesupport_introspection_c -isystem /opt/ros/foxy/include 
+C_INCLUDES = -I/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_generator_c -I/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg/rosidl_typesupport_introspection_c -isystem /opt/ros/galactic/include 
 

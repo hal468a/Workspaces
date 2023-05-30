@@ -72,7 +72,7 @@ static bool _TurnCamera_Request__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__srv__TurnCamera_Request(
@@ -270,7 +270,7 @@ static bool _TurnCamera_Response__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__srv__TurnCamera_Response(

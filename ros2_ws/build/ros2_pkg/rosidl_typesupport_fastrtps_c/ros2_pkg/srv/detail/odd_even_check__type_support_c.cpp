@@ -72,7 +72,7 @@ static bool _OddEvenCheck_Request__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__srv__OddEvenCheck_Request(
@@ -260,7 +260,7 @@ static bool _OddEvenCheck_Response__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_ros2_pkg
 size_t get_serialized_size_ros2_pkg__srv__OddEvenCheck_Response(

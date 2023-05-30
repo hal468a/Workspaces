@@ -1,0 +1,4 @@
+Invoking command in '/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg -- -j12 -l12
+Invoked command in '/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg -- -j12 -l12
+Invoking command in '/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg
+Invoked command in '/home/hal468a/Workspaces/ros2_ws/build/ros2_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/hal468a/Workspaces/ros2_ws/build/ros2_pkg

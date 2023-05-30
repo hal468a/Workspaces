@@ -8,8 +8,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "rcutils/allocator.h"
-
 bool
 ros2_pkg__srv__TurnCamera_Request__init(ros2_pkg__srv__TurnCamera_Request * msg)
 {
@@ -58,15 +56,14 @@ ros2_pkg__srv__TurnCamera_Request__copy(
 ros2_pkg__srv__TurnCamera_Request *
 ros2_pkg__srv__TurnCamera_Request__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__srv__TurnCamera_Request * msg = (ros2_pkg__srv__TurnCamera_Request *)allocator.allocate(sizeof(ros2_pkg__srv__TurnCamera_Request), allocator.state);
+  ros2_pkg__srv__TurnCamera_Request * msg = (ros2_pkg__srv__TurnCamera_Request *)malloc(sizeof(ros2_pkg__srv__TurnCamera_Request));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(ros2_pkg__srv__TurnCamera_Request));
   bool success = ros2_pkg__srv__TurnCamera_Request__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -75,11 +72,10 @@ ros2_pkg__srv__TurnCamera_Request__create()
 void
 ros2_pkg__srv__TurnCamera_Request__destroy(ros2_pkg__srv__TurnCamera_Request * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     ros2_pkg__srv__TurnCamera_Request__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -89,11 +85,9 @@ ros2_pkg__srv__TurnCamera_Request__Sequence__init(ros2_pkg__srv__TurnCamera_Requ
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   ros2_pkg__srv__TurnCamera_Request * data = NULL;
-
   if (size) {
-    data = (ros2_pkg__srv__TurnCamera_Request *)allocator.zero_allocate(size, sizeof(ros2_pkg__srv__TurnCamera_Request), allocator.state);
+    data = (ros2_pkg__srv__TurnCamera_Request *)calloc(size, sizeof(ros2_pkg__srv__TurnCamera_Request));
     if (!data) {
       return false;
     }
@@ -110,7 +104,7 @@ ros2_pkg__srv__TurnCamera_Request__Sequence__init(ros2_pkg__srv__TurnCamera_Requ
       for (; i > 0; --i) {
         ros2_pkg__srv__TurnCamera_Request__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -126,8 +120,6 @@ ros2_pkg__srv__TurnCamera_Request__Sequence__fini(ros2_pkg__srv__TurnCamera_Requ
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -135,7 +127,7 @@ ros2_pkg__srv__TurnCamera_Request__Sequence__fini(ros2_pkg__srv__TurnCamera_Requ
     for (size_t i = 0; i < array->capacity; ++i) {
       ros2_pkg__srv__TurnCamera_Request__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -149,14 +141,13 @@ ros2_pkg__srv__TurnCamera_Request__Sequence__fini(ros2_pkg__srv__TurnCamera_Requ
 ros2_pkg__srv__TurnCamera_Request__Sequence *
 ros2_pkg__srv__TurnCamera_Request__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__srv__TurnCamera_Request__Sequence * array = (ros2_pkg__srv__TurnCamera_Request__Sequence *)allocator.allocate(sizeof(ros2_pkg__srv__TurnCamera_Request__Sequence), allocator.state);
+  ros2_pkg__srv__TurnCamera_Request__Sequence * array = (ros2_pkg__srv__TurnCamera_Request__Sequence *)malloc(sizeof(ros2_pkg__srv__TurnCamera_Request__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = ros2_pkg__srv__TurnCamera_Request__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -165,11 +156,10 @@ ros2_pkg__srv__TurnCamera_Request__Sequence__create(size_t size)
 void
 ros2_pkg__srv__TurnCamera_Request__Sequence__destroy(ros2_pkg__srv__TurnCamera_Request__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     ros2_pkg__srv__TurnCamera_Request__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool
@@ -293,15 +283,14 @@ ros2_pkg__srv__TurnCamera_Response__copy(
 ros2_pkg__srv__TurnCamera_Response *
 ros2_pkg__srv__TurnCamera_Response__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__srv__TurnCamera_Response * msg = (ros2_pkg__srv__TurnCamera_Response *)allocator.allocate(sizeof(ros2_pkg__srv__TurnCamera_Response), allocator.state);
+  ros2_pkg__srv__TurnCamera_Response * msg = (ros2_pkg__srv__TurnCamera_Response *)malloc(sizeof(ros2_pkg__srv__TurnCamera_Response));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(ros2_pkg__srv__TurnCamera_Response));
   bool success = ros2_pkg__srv__TurnCamera_Response__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -310,11 +299,10 @@ ros2_pkg__srv__TurnCamera_Response__create()
 void
 ros2_pkg__srv__TurnCamera_Response__destroy(ros2_pkg__srv__TurnCamera_Response * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     ros2_pkg__srv__TurnCamera_Response__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -324,11 +312,9 @@ ros2_pkg__srv__TurnCamera_Response__Sequence__init(ros2_pkg__srv__TurnCamera_Res
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   ros2_pkg__srv__TurnCamera_Response * data = NULL;
-
   if (size) {
-    data = (ros2_pkg__srv__TurnCamera_Response *)allocator.zero_allocate(size, sizeof(ros2_pkg__srv__TurnCamera_Response), allocator.state);
+    data = (ros2_pkg__srv__TurnCamera_Response *)calloc(size, sizeof(ros2_pkg__srv__TurnCamera_Response));
     if (!data) {
       return false;
     }
@@ -345,7 +331,7 @@ ros2_pkg__srv__TurnCamera_Response__Sequence__init(ros2_pkg__srv__TurnCamera_Res
       for (; i > 0; --i) {
         ros2_pkg__srv__TurnCamera_Response__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -361,8 +347,6 @@ ros2_pkg__srv__TurnCamera_Response__Sequence__fini(ros2_pkg__srv__TurnCamera_Res
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -370,7 +354,7 @@ ros2_pkg__srv__TurnCamera_Response__Sequence__fini(ros2_pkg__srv__TurnCamera_Res
     for (size_t i = 0; i < array->capacity; ++i) {
       ros2_pkg__srv__TurnCamera_Response__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -384,14 +368,13 @@ ros2_pkg__srv__TurnCamera_Response__Sequence__fini(ros2_pkg__srv__TurnCamera_Res
 ros2_pkg__srv__TurnCamera_Response__Sequence *
 ros2_pkg__srv__TurnCamera_Response__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__srv__TurnCamera_Response__Sequence * array = (ros2_pkg__srv__TurnCamera_Response__Sequence *)allocator.allocate(sizeof(ros2_pkg__srv__TurnCamera_Response__Sequence), allocator.state);
+  ros2_pkg__srv__TurnCamera_Response__Sequence * array = (ros2_pkg__srv__TurnCamera_Response__Sequence *)malloc(sizeof(ros2_pkg__srv__TurnCamera_Response__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = ros2_pkg__srv__TurnCamera_Response__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -400,11 +383,10 @@ ros2_pkg__srv__TurnCamera_Response__Sequence__create(size_t size)
 void
 ros2_pkg__srv__TurnCamera_Response__Sequence__destroy(ros2_pkg__srv__TurnCamera_Response__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     ros2_pkg__srv__TurnCamera_Response__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool

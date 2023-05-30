@@ -8,8 +8,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "rcutils/allocator.h"
-
 
 // Include directives for member types
 // Member `goal_point`
@@ -74,15 +72,14 @@ ros2_pkg__action__Navigate_Goal__copy(
 ros2_pkg__action__Navigate_Goal *
 ros2_pkg__action__Navigate_Goal__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_Goal * msg = (ros2_pkg__action__Navigate_Goal *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_Goal), allocator.state);
+  ros2_pkg__action__Navigate_Goal * msg = (ros2_pkg__action__Navigate_Goal *)malloc(sizeof(ros2_pkg__action__Navigate_Goal));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(ros2_pkg__action__Navigate_Goal));
   bool success = ros2_pkg__action__Navigate_Goal__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -91,11 +88,10 @@ ros2_pkg__action__Navigate_Goal__create()
 void
 ros2_pkg__action__Navigate_Goal__destroy(ros2_pkg__action__Navigate_Goal * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     ros2_pkg__action__Navigate_Goal__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -105,11 +101,9 @@ ros2_pkg__action__Navigate_Goal__Sequence__init(ros2_pkg__action__Navigate_Goal_
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   ros2_pkg__action__Navigate_Goal * data = NULL;
-
   if (size) {
-    data = (ros2_pkg__action__Navigate_Goal *)allocator.zero_allocate(size, sizeof(ros2_pkg__action__Navigate_Goal), allocator.state);
+    data = (ros2_pkg__action__Navigate_Goal *)calloc(size, sizeof(ros2_pkg__action__Navigate_Goal));
     if (!data) {
       return false;
     }
@@ -126,7 +120,7 @@ ros2_pkg__action__Navigate_Goal__Sequence__init(ros2_pkg__action__Navigate_Goal_
       for (; i > 0; --i) {
         ros2_pkg__action__Navigate_Goal__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -142,8 +136,6 @@ ros2_pkg__action__Navigate_Goal__Sequence__fini(ros2_pkg__action__Navigate_Goal_
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -151,7 +143,7 @@ ros2_pkg__action__Navigate_Goal__Sequence__fini(ros2_pkg__action__Navigate_Goal_
     for (size_t i = 0; i < array->capacity; ++i) {
       ros2_pkg__action__Navigate_Goal__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -165,14 +157,13 @@ ros2_pkg__action__Navigate_Goal__Sequence__fini(ros2_pkg__action__Navigate_Goal_
 ros2_pkg__action__Navigate_Goal__Sequence *
 ros2_pkg__action__Navigate_Goal__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_Goal__Sequence * array = (ros2_pkg__action__Navigate_Goal__Sequence *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_Goal__Sequence), allocator.state);
+  ros2_pkg__action__Navigate_Goal__Sequence * array = (ros2_pkg__action__Navigate_Goal__Sequence *)malloc(sizeof(ros2_pkg__action__Navigate_Goal__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = ros2_pkg__action__Navigate_Goal__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -181,11 +172,10 @@ ros2_pkg__action__Navigate_Goal__Sequence__create(size_t size)
 void
 ros2_pkg__action__Navigate_Goal__Sequence__destroy(ros2_pkg__action__Navigate_Goal__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     ros2_pkg__action__Navigate_Goal__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool
@@ -294,15 +284,14 @@ ros2_pkg__action__Navigate_Result__copy(
 ros2_pkg__action__Navigate_Result *
 ros2_pkg__action__Navigate_Result__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_Result * msg = (ros2_pkg__action__Navigate_Result *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_Result), allocator.state);
+  ros2_pkg__action__Navigate_Result * msg = (ros2_pkg__action__Navigate_Result *)malloc(sizeof(ros2_pkg__action__Navigate_Result));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(ros2_pkg__action__Navigate_Result));
   bool success = ros2_pkg__action__Navigate_Result__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -311,11 +300,10 @@ ros2_pkg__action__Navigate_Result__create()
 void
 ros2_pkg__action__Navigate_Result__destroy(ros2_pkg__action__Navigate_Result * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     ros2_pkg__action__Navigate_Result__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -325,11 +313,9 @@ ros2_pkg__action__Navigate_Result__Sequence__init(ros2_pkg__action__Navigate_Res
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   ros2_pkg__action__Navigate_Result * data = NULL;
-
   if (size) {
-    data = (ros2_pkg__action__Navigate_Result *)allocator.zero_allocate(size, sizeof(ros2_pkg__action__Navigate_Result), allocator.state);
+    data = (ros2_pkg__action__Navigate_Result *)calloc(size, sizeof(ros2_pkg__action__Navigate_Result));
     if (!data) {
       return false;
     }
@@ -346,7 +332,7 @@ ros2_pkg__action__Navigate_Result__Sequence__init(ros2_pkg__action__Navigate_Res
       for (; i > 0; --i) {
         ros2_pkg__action__Navigate_Result__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -362,8 +348,6 @@ ros2_pkg__action__Navigate_Result__Sequence__fini(ros2_pkg__action__Navigate_Res
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -371,7 +355,7 @@ ros2_pkg__action__Navigate_Result__Sequence__fini(ros2_pkg__action__Navigate_Res
     for (size_t i = 0; i < array->capacity; ++i) {
       ros2_pkg__action__Navigate_Result__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -385,14 +369,13 @@ ros2_pkg__action__Navigate_Result__Sequence__fini(ros2_pkg__action__Navigate_Res
 ros2_pkg__action__Navigate_Result__Sequence *
 ros2_pkg__action__Navigate_Result__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_Result__Sequence * array = (ros2_pkg__action__Navigate_Result__Sequence *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_Result__Sequence), allocator.state);
+  ros2_pkg__action__Navigate_Result__Sequence * array = (ros2_pkg__action__Navigate_Result__Sequence *)malloc(sizeof(ros2_pkg__action__Navigate_Result__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = ros2_pkg__action__Navigate_Result__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -401,11 +384,10 @@ ros2_pkg__action__Navigate_Result__Sequence__create(size_t size)
 void
 ros2_pkg__action__Navigate_Result__Sequence__destroy(ros2_pkg__action__Navigate_Result__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     ros2_pkg__action__Navigate_Result__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool
@@ -514,15 +496,14 @@ ros2_pkg__action__Navigate_Feedback__copy(
 ros2_pkg__action__Navigate_Feedback *
 ros2_pkg__action__Navigate_Feedback__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_Feedback * msg = (ros2_pkg__action__Navigate_Feedback *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_Feedback), allocator.state);
+  ros2_pkg__action__Navigate_Feedback * msg = (ros2_pkg__action__Navigate_Feedback *)malloc(sizeof(ros2_pkg__action__Navigate_Feedback));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(ros2_pkg__action__Navigate_Feedback));
   bool success = ros2_pkg__action__Navigate_Feedback__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -531,11 +512,10 @@ ros2_pkg__action__Navigate_Feedback__create()
 void
 ros2_pkg__action__Navigate_Feedback__destroy(ros2_pkg__action__Navigate_Feedback * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     ros2_pkg__action__Navigate_Feedback__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -545,11 +525,9 @@ ros2_pkg__action__Navigate_Feedback__Sequence__init(ros2_pkg__action__Navigate_F
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   ros2_pkg__action__Navigate_Feedback * data = NULL;
-
   if (size) {
-    data = (ros2_pkg__action__Navigate_Feedback *)allocator.zero_allocate(size, sizeof(ros2_pkg__action__Navigate_Feedback), allocator.state);
+    data = (ros2_pkg__action__Navigate_Feedback *)calloc(size, sizeof(ros2_pkg__action__Navigate_Feedback));
     if (!data) {
       return false;
     }
@@ -566,7 +544,7 @@ ros2_pkg__action__Navigate_Feedback__Sequence__init(ros2_pkg__action__Navigate_F
       for (; i > 0; --i) {
         ros2_pkg__action__Navigate_Feedback__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -582,8 +560,6 @@ ros2_pkg__action__Navigate_Feedback__Sequence__fini(ros2_pkg__action__Navigate_F
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -591,7 +567,7 @@ ros2_pkg__action__Navigate_Feedback__Sequence__fini(ros2_pkg__action__Navigate_F
     for (size_t i = 0; i < array->capacity; ++i) {
       ros2_pkg__action__Navigate_Feedback__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -605,14 +581,13 @@ ros2_pkg__action__Navigate_Feedback__Sequence__fini(ros2_pkg__action__Navigate_F
 ros2_pkg__action__Navigate_Feedback__Sequence *
 ros2_pkg__action__Navigate_Feedback__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_Feedback__Sequence * array = (ros2_pkg__action__Navigate_Feedback__Sequence *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_Feedback__Sequence), allocator.state);
+  ros2_pkg__action__Navigate_Feedback__Sequence * array = (ros2_pkg__action__Navigate_Feedback__Sequence *)malloc(sizeof(ros2_pkg__action__Navigate_Feedback__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = ros2_pkg__action__Navigate_Feedback__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -621,11 +596,10 @@ ros2_pkg__action__Navigate_Feedback__Sequence__create(size_t size)
 void
 ros2_pkg__action__Navigate_Feedback__Sequence__destroy(ros2_pkg__action__Navigate_Feedback__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     ros2_pkg__action__Navigate_Feedback__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool
@@ -771,15 +745,14 @@ ros2_pkg__action__Navigate_SendGoal_Request__copy(
 ros2_pkg__action__Navigate_SendGoal_Request *
 ros2_pkg__action__Navigate_SendGoal_Request__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_SendGoal_Request * msg = (ros2_pkg__action__Navigate_SendGoal_Request *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_SendGoal_Request), allocator.state);
+  ros2_pkg__action__Navigate_SendGoal_Request * msg = (ros2_pkg__action__Navigate_SendGoal_Request *)malloc(sizeof(ros2_pkg__action__Navigate_SendGoal_Request));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(ros2_pkg__action__Navigate_SendGoal_Request));
   bool success = ros2_pkg__action__Navigate_SendGoal_Request__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -788,11 +761,10 @@ ros2_pkg__action__Navigate_SendGoal_Request__create()
 void
 ros2_pkg__action__Navigate_SendGoal_Request__destroy(ros2_pkg__action__Navigate_SendGoal_Request * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     ros2_pkg__action__Navigate_SendGoal_Request__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -802,11 +774,9 @@ ros2_pkg__action__Navigate_SendGoal_Request__Sequence__init(ros2_pkg__action__Na
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   ros2_pkg__action__Navigate_SendGoal_Request * data = NULL;
-
   if (size) {
-    data = (ros2_pkg__action__Navigate_SendGoal_Request *)allocator.zero_allocate(size, sizeof(ros2_pkg__action__Navigate_SendGoal_Request), allocator.state);
+    data = (ros2_pkg__action__Navigate_SendGoal_Request *)calloc(size, sizeof(ros2_pkg__action__Navigate_SendGoal_Request));
     if (!data) {
       return false;
     }
@@ -823,7 +793,7 @@ ros2_pkg__action__Navigate_SendGoal_Request__Sequence__init(ros2_pkg__action__Na
       for (; i > 0; --i) {
         ros2_pkg__action__Navigate_SendGoal_Request__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -839,8 +809,6 @@ ros2_pkg__action__Navigate_SendGoal_Request__Sequence__fini(ros2_pkg__action__Na
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -848,7 +816,7 @@ ros2_pkg__action__Navigate_SendGoal_Request__Sequence__fini(ros2_pkg__action__Na
     for (size_t i = 0; i < array->capacity; ++i) {
       ros2_pkg__action__Navigate_SendGoal_Request__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -862,14 +830,13 @@ ros2_pkg__action__Navigate_SendGoal_Request__Sequence__fini(ros2_pkg__action__Na
 ros2_pkg__action__Navigate_SendGoal_Request__Sequence *
 ros2_pkg__action__Navigate_SendGoal_Request__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_SendGoal_Request__Sequence * array = (ros2_pkg__action__Navigate_SendGoal_Request__Sequence *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_SendGoal_Request__Sequence), allocator.state);
+  ros2_pkg__action__Navigate_SendGoal_Request__Sequence * array = (ros2_pkg__action__Navigate_SendGoal_Request__Sequence *)malloc(sizeof(ros2_pkg__action__Navigate_SendGoal_Request__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = ros2_pkg__action__Navigate_SendGoal_Request__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -878,11 +845,10 @@ ros2_pkg__action__Navigate_SendGoal_Request__Sequence__create(size_t size)
 void
 ros2_pkg__action__Navigate_SendGoal_Request__Sequence__destroy(ros2_pkg__action__Navigate_SendGoal_Request__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     ros2_pkg__action__Navigate_SendGoal_Request__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool
@@ -1014,15 +980,14 @@ ros2_pkg__action__Navigate_SendGoal_Response__copy(
 ros2_pkg__action__Navigate_SendGoal_Response *
 ros2_pkg__action__Navigate_SendGoal_Response__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_SendGoal_Response * msg = (ros2_pkg__action__Navigate_SendGoal_Response *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_SendGoal_Response), allocator.state);
+  ros2_pkg__action__Navigate_SendGoal_Response * msg = (ros2_pkg__action__Navigate_SendGoal_Response *)malloc(sizeof(ros2_pkg__action__Navigate_SendGoal_Response));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(ros2_pkg__action__Navigate_SendGoal_Response));
   bool success = ros2_pkg__action__Navigate_SendGoal_Response__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -1031,11 +996,10 @@ ros2_pkg__action__Navigate_SendGoal_Response__create()
 void
 ros2_pkg__action__Navigate_SendGoal_Response__destroy(ros2_pkg__action__Navigate_SendGoal_Response * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     ros2_pkg__action__Navigate_SendGoal_Response__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -1045,11 +1009,9 @@ ros2_pkg__action__Navigate_SendGoal_Response__Sequence__init(ros2_pkg__action__N
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   ros2_pkg__action__Navigate_SendGoal_Response * data = NULL;
-
   if (size) {
-    data = (ros2_pkg__action__Navigate_SendGoal_Response *)allocator.zero_allocate(size, sizeof(ros2_pkg__action__Navigate_SendGoal_Response), allocator.state);
+    data = (ros2_pkg__action__Navigate_SendGoal_Response *)calloc(size, sizeof(ros2_pkg__action__Navigate_SendGoal_Response));
     if (!data) {
       return false;
     }
@@ -1066,7 +1028,7 @@ ros2_pkg__action__Navigate_SendGoal_Response__Sequence__init(ros2_pkg__action__N
       for (; i > 0; --i) {
         ros2_pkg__action__Navigate_SendGoal_Response__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -1082,8 +1044,6 @@ ros2_pkg__action__Navigate_SendGoal_Response__Sequence__fini(ros2_pkg__action__N
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -1091,7 +1051,7 @@ ros2_pkg__action__Navigate_SendGoal_Response__Sequence__fini(ros2_pkg__action__N
     for (size_t i = 0; i < array->capacity; ++i) {
       ros2_pkg__action__Navigate_SendGoal_Response__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -1105,14 +1065,13 @@ ros2_pkg__action__Navigate_SendGoal_Response__Sequence__fini(ros2_pkg__action__N
 ros2_pkg__action__Navigate_SendGoal_Response__Sequence *
 ros2_pkg__action__Navigate_SendGoal_Response__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_SendGoal_Response__Sequence * array = (ros2_pkg__action__Navigate_SendGoal_Response__Sequence *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_SendGoal_Response__Sequence), allocator.state);
+  ros2_pkg__action__Navigate_SendGoal_Response__Sequence * array = (ros2_pkg__action__Navigate_SendGoal_Response__Sequence *)malloc(sizeof(ros2_pkg__action__Navigate_SendGoal_Response__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = ros2_pkg__action__Navigate_SendGoal_Response__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -1121,11 +1080,10 @@ ros2_pkg__action__Navigate_SendGoal_Response__Sequence__create(size_t size)
 void
 ros2_pkg__action__Navigate_SendGoal_Response__Sequence__destroy(ros2_pkg__action__Navigate_SendGoal_Response__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     ros2_pkg__action__Navigate_SendGoal_Response__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool
@@ -1250,15 +1208,14 @@ ros2_pkg__action__Navigate_GetResult_Request__copy(
 ros2_pkg__action__Navigate_GetResult_Request *
 ros2_pkg__action__Navigate_GetResult_Request__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_GetResult_Request * msg = (ros2_pkg__action__Navigate_GetResult_Request *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_GetResult_Request), allocator.state);
+  ros2_pkg__action__Navigate_GetResult_Request * msg = (ros2_pkg__action__Navigate_GetResult_Request *)malloc(sizeof(ros2_pkg__action__Navigate_GetResult_Request));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(ros2_pkg__action__Navigate_GetResult_Request));
   bool success = ros2_pkg__action__Navigate_GetResult_Request__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -1267,11 +1224,10 @@ ros2_pkg__action__Navigate_GetResult_Request__create()
 void
 ros2_pkg__action__Navigate_GetResult_Request__destroy(ros2_pkg__action__Navigate_GetResult_Request * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     ros2_pkg__action__Navigate_GetResult_Request__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -1281,11 +1237,9 @@ ros2_pkg__action__Navigate_GetResult_Request__Sequence__init(ros2_pkg__action__N
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   ros2_pkg__action__Navigate_GetResult_Request * data = NULL;
-
   if (size) {
-    data = (ros2_pkg__action__Navigate_GetResult_Request *)allocator.zero_allocate(size, sizeof(ros2_pkg__action__Navigate_GetResult_Request), allocator.state);
+    data = (ros2_pkg__action__Navigate_GetResult_Request *)calloc(size, sizeof(ros2_pkg__action__Navigate_GetResult_Request));
     if (!data) {
       return false;
     }
@@ -1302,7 +1256,7 @@ ros2_pkg__action__Navigate_GetResult_Request__Sequence__init(ros2_pkg__action__N
       for (; i > 0; --i) {
         ros2_pkg__action__Navigate_GetResult_Request__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -1318,8 +1272,6 @@ ros2_pkg__action__Navigate_GetResult_Request__Sequence__fini(ros2_pkg__action__N
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -1327,7 +1279,7 @@ ros2_pkg__action__Navigate_GetResult_Request__Sequence__fini(ros2_pkg__action__N
     for (size_t i = 0; i < array->capacity; ++i) {
       ros2_pkg__action__Navigate_GetResult_Request__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -1341,14 +1293,13 @@ ros2_pkg__action__Navigate_GetResult_Request__Sequence__fini(ros2_pkg__action__N
 ros2_pkg__action__Navigate_GetResult_Request__Sequence *
 ros2_pkg__action__Navigate_GetResult_Request__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_GetResult_Request__Sequence * array = (ros2_pkg__action__Navigate_GetResult_Request__Sequence *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_GetResult_Request__Sequence), allocator.state);
+  ros2_pkg__action__Navigate_GetResult_Request__Sequence * array = (ros2_pkg__action__Navigate_GetResult_Request__Sequence *)malloc(sizeof(ros2_pkg__action__Navigate_GetResult_Request__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = ros2_pkg__action__Navigate_GetResult_Request__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -1357,11 +1308,10 @@ ros2_pkg__action__Navigate_GetResult_Request__Sequence__create(size_t size)
 void
 ros2_pkg__action__Navigate_GetResult_Request__Sequence__destroy(ros2_pkg__action__Navigate_GetResult_Request__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     ros2_pkg__action__Navigate_GetResult_Request__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool
@@ -1494,15 +1444,14 @@ ros2_pkg__action__Navigate_GetResult_Response__copy(
 ros2_pkg__action__Navigate_GetResult_Response *
 ros2_pkg__action__Navigate_GetResult_Response__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_GetResult_Response * msg = (ros2_pkg__action__Navigate_GetResult_Response *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_GetResult_Response), allocator.state);
+  ros2_pkg__action__Navigate_GetResult_Response * msg = (ros2_pkg__action__Navigate_GetResult_Response *)malloc(sizeof(ros2_pkg__action__Navigate_GetResult_Response));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(ros2_pkg__action__Navigate_GetResult_Response));
   bool success = ros2_pkg__action__Navigate_GetResult_Response__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -1511,11 +1460,10 @@ ros2_pkg__action__Navigate_GetResult_Response__create()
 void
 ros2_pkg__action__Navigate_GetResult_Response__destroy(ros2_pkg__action__Navigate_GetResult_Response * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     ros2_pkg__action__Navigate_GetResult_Response__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -1525,11 +1473,9 @@ ros2_pkg__action__Navigate_GetResult_Response__Sequence__init(ros2_pkg__action__
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   ros2_pkg__action__Navigate_GetResult_Response * data = NULL;
-
   if (size) {
-    data = (ros2_pkg__action__Navigate_GetResult_Response *)allocator.zero_allocate(size, sizeof(ros2_pkg__action__Navigate_GetResult_Response), allocator.state);
+    data = (ros2_pkg__action__Navigate_GetResult_Response *)calloc(size, sizeof(ros2_pkg__action__Navigate_GetResult_Response));
     if (!data) {
       return false;
     }
@@ -1546,7 +1492,7 @@ ros2_pkg__action__Navigate_GetResult_Response__Sequence__init(ros2_pkg__action__
       for (; i > 0; --i) {
         ros2_pkg__action__Navigate_GetResult_Response__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -1562,8 +1508,6 @@ ros2_pkg__action__Navigate_GetResult_Response__Sequence__fini(ros2_pkg__action__
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -1571,7 +1515,7 @@ ros2_pkg__action__Navigate_GetResult_Response__Sequence__fini(ros2_pkg__action__
     for (size_t i = 0; i < array->capacity; ++i) {
       ros2_pkg__action__Navigate_GetResult_Response__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -1585,14 +1529,13 @@ ros2_pkg__action__Navigate_GetResult_Response__Sequence__fini(ros2_pkg__action__
 ros2_pkg__action__Navigate_GetResult_Response__Sequence *
 ros2_pkg__action__Navigate_GetResult_Response__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_GetResult_Response__Sequence * array = (ros2_pkg__action__Navigate_GetResult_Response__Sequence *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_GetResult_Response__Sequence), allocator.state);
+  ros2_pkg__action__Navigate_GetResult_Response__Sequence * array = (ros2_pkg__action__Navigate_GetResult_Response__Sequence *)malloc(sizeof(ros2_pkg__action__Navigate_GetResult_Response__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = ros2_pkg__action__Navigate_GetResult_Response__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -1601,11 +1544,10 @@ ros2_pkg__action__Navigate_GetResult_Response__Sequence__create(size_t size)
 void
 ros2_pkg__action__Navigate_GetResult_Response__Sequence__destroy(ros2_pkg__action__Navigate_GetResult_Response__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     ros2_pkg__action__Navigate_GetResult_Response__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool
@@ -1752,15 +1694,14 @@ ros2_pkg__action__Navigate_FeedbackMessage__copy(
 ros2_pkg__action__Navigate_FeedbackMessage *
 ros2_pkg__action__Navigate_FeedbackMessage__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_FeedbackMessage * msg = (ros2_pkg__action__Navigate_FeedbackMessage *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_FeedbackMessage), allocator.state);
+  ros2_pkg__action__Navigate_FeedbackMessage * msg = (ros2_pkg__action__Navigate_FeedbackMessage *)malloc(sizeof(ros2_pkg__action__Navigate_FeedbackMessage));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(ros2_pkg__action__Navigate_FeedbackMessage));
   bool success = ros2_pkg__action__Navigate_FeedbackMessage__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -1769,11 +1710,10 @@ ros2_pkg__action__Navigate_FeedbackMessage__create()
 void
 ros2_pkg__action__Navigate_FeedbackMessage__destroy(ros2_pkg__action__Navigate_FeedbackMessage * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     ros2_pkg__action__Navigate_FeedbackMessage__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -1783,11 +1723,9 @@ ros2_pkg__action__Navigate_FeedbackMessage__Sequence__init(ros2_pkg__action__Nav
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   ros2_pkg__action__Navigate_FeedbackMessage * data = NULL;
-
   if (size) {
-    data = (ros2_pkg__action__Navigate_FeedbackMessage *)allocator.zero_allocate(size, sizeof(ros2_pkg__action__Navigate_FeedbackMessage), allocator.state);
+    data = (ros2_pkg__action__Navigate_FeedbackMessage *)calloc(size, sizeof(ros2_pkg__action__Navigate_FeedbackMessage));
     if (!data) {
       return false;
     }
@@ -1804,7 +1742,7 @@ ros2_pkg__action__Navigate_FeedbackMessage__Sequence__init(ros2_pkg__action__Nav
       for (; i > 0; --i) {
         ros2_pkg__action__Navigate_FeedbackMessage__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -1820,8 +1758,6 @@ ros2_pkg__action__Navigate_FeedbackMessage__Sequence__fini(ros2_pkg__action__Nav
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -1829,7 +1765,7 @@ ros2_pkg__action__Navigate_FeedbackMessage__Sequence__fini(ros2_pkg__action__Nav
     for (size_t i = 0; i < array->capacity; ++i) {
       ros2_pkg__action__Navigate_FeedbackMessage__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -1843,14 +1779,13 @@ ros2_pkg__action__Navigate_FeedbackMessage__Sequence__fini(ros2_pkg__action__Nav
 ros2_pkg__action__Navigate_FeedbackMessage__Sequence *
 ros2_pkg__action__Navigate_FeedbackMessage__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  ros2_pkg__action__Navigate_FeedbackMessage__Sequence * array = (ros2_pkg__action__Navigate_FeedbackMessage__Sequence *)allocator.allocate(sizeof(ros2_pkg__action__Navigate_FeedbackMessage__Sequence), allocator.state);
+  ros2_pkg__action__Navigate_FeedbackMessage__Sequence * array = (ros2_pkg__action__Navigate_FeedbackMessage__Sequence *)malloc(sizeof(ros2_pkg__action__Navigate_FeedbackMessage__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = ros2_pkg__action__Navigate_FeedbackMessage__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -1859,11 +1794,10 @@ ros2_pkg__action__Navigate_FeedbackMessage__Sequence__create(size_t size)
 void
 ros2_pkg__action__Navigate_FeedbackMessage__Sequence__destroy(ros2_pkg__action__Navigate_FeedbackMessage__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     ros2_pkg__action__Navigate_FeedbackMessage__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool

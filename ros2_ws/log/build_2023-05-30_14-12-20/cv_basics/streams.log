@@ -1,0 +1,22 @@
+[0.508s] Invoking command in '/home/hal468a/Workspaces/ros2_ws/src/cv_basics': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/hal468a/Workspaces/ros2_ws/build/cv_basics/prefix_override:/home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/cv_basics build --build-base /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build install --record /home/hal468a/Workspaces/ros2_ws/build/cv_basics/install.log --install-scripts $base/lib/cv_basics --single-version-externally-managed
+[0.679s] running egg_info
+[0.680s] writing ../../build/cv_basics/cv_basics.egg-info/PKG-INFO
+[0.680s] writing dependency_links to ../../build/cv_basics/cv_basics.egg-info/dependency_links.txt
+[0.680s] writing entry points to ../../build/cv_basics/cv_basics.egg-info/entry_points.txt
+[0.680s] writing requirements to ../../build/cv_basics/cv_basics.egg-info/requires.txt
+[0.680s] writing top-level names to ../../build/cv_basics/cv_basics.egg-info/top_level.txt
+[0.707s] reading manifest file '../../build/cv_basics/cv_basics.egg-info/SOURCES.txt'
+[0.708s] writing manifest file '../../build/cv_basics/cv_basics.egg-info/SOURCES.txt'
+[0.708s] running build
+[0.708s] running build_py
+[0.708s] running install
+[0.709s] running install_lib
+[0.710s] running install_data
+[0.711s] running install_egg_info
+[0.712s] removing '/home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info' (and everything under it)
+[0.712s] Copying ../../build/cv_basics/cv_basics.egg-info to /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info
+[0.713s] running install_scripts
+[0.726s] Installing cam_pub script to /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics
+[0.727s] Installing cam_sub script to /home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/cv_basics
+[0.727s] writing list of installed files to '/home/hal468a/Workspaces/ros2_ws/build/cv_basics/install.log'
+[0.745s] Invoked command in '/home/hal468a/Workspaces/ros2_ws/src/cv_basics' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/hal468a/Workspaces/ros2_ws/build/cv_basics/prefix_override:/home/hal468a/Workspaces/ros2_ws/install/cv_basics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/cv_basics build --build-base /home/hal468a/Workspaces/ros2_ws/build/cv_basics/build install --record /home/hal468a/Workspaces/ros2_ws/build/cv_basics/install.log --install-scripts $base/lib/cv_basics --single-version-externally-managed
